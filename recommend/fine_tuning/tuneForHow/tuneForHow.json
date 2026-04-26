@@ -1,0 +1,1316 @@
+{
+  "training_data": [
+    {
+      "input": {
+        "user_sequence": ["盗梦空间", "星际穿越", "记忆碎片", "致命魔术", "蝙蝠侠：黑暗骑士"],
+        "preferences": ["科幻", "悬疑", "复杂叙事"],
+        "pref_weight_info": "科幻:0.9, 悬疑:0.8, 复杂叙事:0.85",
+        "movie_info": {
+          "title": "信条",
+          "director": "克里斯托弗·诺兰",
+          "genres": ["科幻", "动作", "惊悚"],
+          "overview": "一名特工通过时间逆转技术试图阻止第三次世界大战的发生，在任务中逐渐发现背后的巨大阴谋。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《信条》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["肖申克的救赎", "阿甘正传", "当幸福来敲门", "海上钢琴师", "美丽人生"],
+        "preferences": ["励志", "剧情", "人生哲理"],
+        "pref_weight_info": "励志:0.95, 剧情:0.8, 人生哲理:0.9",
+        "movie_info": {
+          "title": "绿皮书",
+          "director": "彼得·法雷里",
+          "genres": ["剧情", "喜剧", "传记"],
+          "overview": "一名意大利裔保镖被聘用为世界上优秀的爵士钢琴家开车，钢琴家将从纽约开始举办巡回演奏，俩人之间一段跨越种族、阶级的友谊故事。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.6]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《绿皮书》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["复仇者联盟", "钢铁侠", "美国队长", "蜘蛛侠：英雄归来", "黑豹"],
+        "preferences": ["超级英雄", "动作", "漫威"],
+        "pref_weight_info": "超级英雄:0.9, 动作:0.85, 漫威:0.95",
+        "movie_info": {
+          "title": "银河护卫队",
+          "director": "詹姆斯·古恩",
+          "genres": ["动作", "冒险", "科幻", "喜剧"],
+          "overview": "一群来自不同星系的超级英雄组成团队，共同保护银河系免受邪恶势力的威胁。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《银河护卫队》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["泰坦尼克号", "乱世佳人", "罗马假日", "人鬼情未了", "卡萨布兰卡"],
+        "preferences": ["爱情", "经典", "浪漫"],
+        "pref_weight_info": "爱情:0.9, 经典:0.85, 浪漫:0.8",
+        "movie_info": {
+          "title": "爱在黎明破晓前",
+          "director": "理查德·林克莱特",
+          "genres": ["剧情", "爱情"],
+          "overview": "美国青年杰西在火车上偶遇法国女生塞琳娜，两人在维也纳下车，共同度过一个浪漫的夜晚，在日出前决定是否继续这段感情。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《爱在黎明破晓前》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["盗梦空间", "源代码", "前目的地", "恐怖游轮", "蝴蝶效应"],
+        "preferences": ["烧脑", "科幻", "时间循环"],
+        "pref_weight_info": "烧脑:0.9, 科幻:0.8, 时间循环:0.85",
+        "movie_info": {
+          "title": "明日边缘",
+          "director": "道格·里曼",
+          "genres": ["动作", "科幻"],
+          "overview": "一名军事公关专员被迫加入一场对抗外星人的战争，却意外获得了重置时间的能力，在不断重复的生死循环中寻找胜利的方法。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《明日边缘》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["教父", "好家伙", "美国往事", "疤面煞星", "盗火线"],
+        "preferences": ["黑帮", "犯罪", "经典"],
+        "pref_weight_info": "黑帮:0.9, 犯罪:0.85, 经典:0.8",
+        "movie_info": {
+          "title": "爱尔兰人",
+          "director": "马丁·斯科塞斯",
+          "genres": ["剧情", "犯罪", "传记"],
+          "overview": "通过二战老兵弗兰克的视角，讲述了战后美国有组织犯罪的故事，跨越数十年，记录了黑帮的兴衰历程。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《爱尔兰人》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["千与千寻", "龙猫", "幽灵公主", "天空之城", "魔女宅急便"],
+        "preferences": ["动画", "奇幻", "宫崎骏"],
+        "pref_weight_info": "动画:0.9, 奇幻:0.85, 宫崎骏:0.95",
+        "movie_info": {
+          "title": "哈尔的移动城堡",
+          "director": "宫崎骏",
+          "genres": ["动画", "冒险", "奇幻"],
+          "overview": "年轻的制帽匠苏菲被荒野女巫诅咒变成老妇人，她离开家并在神秘的移动城堡中遇到了魔法师哈尔，两人共同面对战争的威胁。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《哈尔的移动城堡》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["低俗小说", "落水狗", "被解救的姜戈", "八恶人", "好莱坞往事"],
+        "preferences": ["黑色幽默", "非线性叙事", "暴力美学"],
+        "pref_weight_info": "黑色幽默:0.9, 非线性叙事:0.85, 暴力美学:0.8",
+        "movie_info": {
+          "title": "杀死比尔",
+          "director": "昆汀·塔伦蒂诺",
+          "genres": ["动作", "犯罪", "惊悚"],
+          "overview": "一名叫「新娘」的女杀手想脱离所属的暗杀组织，却在婚礼上遭到组织首脑比尔与其党羽的虐杀。她头部中弹整整昏迷4年，醒来后展开复仇计划。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《杀死比尔》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["闪灵", "遗传厄运", "招魂", "小丑回魂", "寂静之地"],
+        "preferences": ["恐怖", "心理惊悚", "超自然"],
+        "pref_weight_info": "恐怖:0.9, 心理惊悚:0.8, 超自然:0.7",
+        "movie_info": {
+          "title": "仲夏夜惊魂",
+          "director": "阿里·艾斯特",
+          "genres": ["恐怖", "悬疑"],
+          "overview": "一对情侣来到瑞典乡间参加一个夏季节日活动，却发现自己陷入了一个诡异的异教组织，面临着无法想象的恐怖。",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.6/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.0]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.2/5.0]\n    P --> Q[推荐《仲夏夜惊魂》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["寻梦环游记", "疯狂动物城", "冰雪奇缘", "超人总动员", "玩具总动员"],
+        "preferences": ["动画", "家庭", "冒险"],
+        "pref_weight_info": "动画:0.9, 家庭:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "蜘蛛侠：平行宇宙",
+          "director": "鲍勃·佩尔西凯蒂",
+          "genres": ["动画", "动作", "冒险", "科幻"],
+          "overview": "少年迈尔斯在一次意外中被放射性蜘蛛咬伤，获得了超能力，并遇到了来自其他宇宙的蜘蛛侠们，共同对抗邪恶势力。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《蜘蛛侠：平行宇宙》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["银翼杀手2049", "降临", "地心引力", "火星救援", "星际穿越"],
+        "preferences": ["硬科幻", "视觉效果", "哲学思考"],
+        "pref_weight_info": "硬科幻:0.9, 视觉效果:0.8, 哲学思考:0.7",
+        "movie_info": {
+          "title": "沙丘",
+          "director": "丹尼斯·维伦纽瓦",
+          "genres": ["科幻", "冒险", "剧情"],
+          "overview": "天赋异禀的少年保罗被命运指引，为了保卫家族和人民，决心前往浩瀚宇宙间最危险的星球，开启一场惊心动魄的冒险。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《沙丘》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["宿醉", "超级坏", "伴娘", "波拉特", "四十岁的老处男"],
+        "preferences": ["喜剧", "荒诞", "R级幽默"],
+        "pref_weight_info": "喜剧:0.9, 荒诞:0.7, R级幽默:0.8",
+        "movie_info": {
+          "title": "泰迪熊",
+          "director": "塞思·麦克法兰",
+          "genres": ["喜剧", "奇幻"],
+          "overview": "男孩约翰收到一只泰迪熊玩偶作为圣诞礼物，许愿希望泰迪熊能说话，成为他真正的朋友。奇迹发生了，泰迪熊有了生命，但长大后却变成了一个粗俗的熊。",
+          "vote_average": 3.8
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《泰迪熊》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["禁闭岛", "消失的爱人", "看不见的客人", "利刃出鞘", "记忆碎片"],
+        "preferences": ["悬疑", "反转", "心理惊悚"],
+        "pref_weight_info": "悬疑:0.9, 反转:0.8, 心理惊悚:0.7",
+        "movie_info": {
+          "title": "谜一样的双眼",
+          "director": "胡安·何塞·坎帕内利亚",
+          "genres": ["剧情", "悬疑", "爱情"],
+          "overview": "退休检察官本杰明决定将25年前的一起强奸谋杀案写成小说，在调查过程中发现案件背后隐藏着惊人的秘密和未了的情感。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《谜一样的双眼》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["疾速追杀", "疯狂的麦克斯4", "谍影重重", "飓风营救", "敢死队"],
+        "preferences": ["动作", "打斗", "刺激"],
+        "pref_weight_info": "动作:0.9, 打斗:0.8, 刺激:0.7",
+        "movie_info": {
+          "title": "惊天营救",
+          "director": "山姆·哈格雷夫",
+          "genres": ["动作", "惊悚", "犯罪"],
+          "overview": "一名黑市雇佣兵接到营救入狱的黑帮大佬被绑架儿子的任务，深入孟加拉国的黑暗世界，展开一场生死营救。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《惊天营救》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["恋恋笔记本", "一天", "怦然心动", "时空恋旅人", "爱乐之城"],
+        "preferences": ["浪漫", "爱情", "感人"],
+        "pref_weight_info": "浪漫:0.9, 爱情:0.8, 感人:0.7",
+        "movie_info": {
+          "title": "遇见你之前",
+          "director": "西娅·夏罗克",
+          "genres": ["剧情", "爱情"],
+          "overview": "活泼的小镇女孩露易莎照顾因车祸全身瘫痪的威尔，两个世界的人相遇，改变了彼此的人生轨迹。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《遇见你之前》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["地球脉动", "我们的星球", "蓝色星球", "王朝", "七个世界一个星球"],
+        "preferences": ["纪录片", "自然", "教育"],
+        "pref_weight_info": "纪录片:0.9, 自然:0.8, 教育:0.7",
+        "movie_info": {
+          "title": "我的章鱼老师",
+          "director": "皮帕·埃尔利希",
+          "genres": ["纪录片"],
+          "overview": "电影制作人克雷格·福斯特在南非的海藻林中与一只普通的章鱼建立了不寻常的友谊，这段关系改变了克雷格对人与自然关系的理解。",
+          "vote_average": 4.7
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《我的章鱼老师》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑客帝国", "攻壳机动队", "银翼杀手", "超体", "我，机器人"],
+        "preferences": ["赛博朋克", "科幻", "哲学"],
+        "pref_weight_info": "赛博朋克:0.9, 科幻:0.8, 哲学:0.7",
+        "movie_info": {
+          "title": "阿丽塔：战斗天使",
+          "director": "罗伯特·罗德里格兹",
+          "genres": ["动作", "科幻", "冒险"],
+          "overview": "在26世纪的世界中，医生戴森在垃圾场发现了一个机械少女的残躯，将其修复后取名阿丽塔，但她失去了记忆，在探寻身世的过程中逐渐发现自己的战斗使命。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《阿丽塔：战斗天使》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["狮子王", "小美人鱼", "美女与野兽", "阿拉丁", "风中奇缘"],
+        "preferences": ["迪士尼", "动画", "音乐"],
+        "pref_weight_info": "迪士尼:0.9, 动画:0.8, 音乐:0.7",
+        "movie_info": {
+          "title": "魔法满屋",
+          "director": "杰拉德·布什",
+          "genres": ["动画", "冒险", "喜剧", "家庭"],
+          "overview": "哥伦比亚一个魔法家族中唯一没有魔法的女孩米拉贝尔，在家园面临危机时挺身而出，拯救家族魔法。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《魔法满屋》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["搏击俱乐部", "七宗罪", "消失的爱人", "龙纹身的女孩", "十二宫"],
+        "preferences": ["大卫·芬奇", "悬疑", "黑暗风格"],
+        "pref_weight_info": "大卫·芬奇:0.9, 悬疑:0.8, 黑暗风格:0.7",
+        "movie_info": {
+          "title": "心理游戏",
+          "director": "大卫·芬奇",
+          "genres": ["悬疑", "惊悚", "剧情"],
+          "overview": "亿万富翁尼古拉斯收到弟弟赠送的一张游戏卡，参与一个神秘游戏后，生活逐渐失控，陷入巨大的阴谋中。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《心理游戏》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["老友记", "生活大爆炸", "办公室", "摩登家庭", "破产姐妹"],
+        "preferences": ["情景喜剧", "幽默", "轻松"],
+        "pref_weight_info": "情景喜剧:0.9, 幽默:0.8, 轻松:0.7",
+        "movie_info": {
+          "title": "废柴联盟",
+          "director": "乔·罗素",
+          "genres": ["喜剧"],
+          "overview": "一群社区大学的学生组成学习小组，在古怪的西班牙语老师的带领下，经历各种荒诞有趣的故事。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《废柴联盟》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["指环王", "霍比特人", "纳尼亚传奇", "哈利波特", "黄金罗盘"],
+        "preferences": ["奇幻", "冒险", "史诗"],
+        "pref_weight_info": "奇幻:0.9, 冒险:0.8, 史诗:0.7",
+        "movie_info": {
+          "title": "时光之轮",
+          "director": "乌塔·布里斯维茨",
+          "genres": ["奇幻", "冒险", "剧情"],
+          "overview": "在一个奇幻世界中，五位年轻人发现其中一人可能是转世的龙，他们必须踏上危险的旅程，拯救世界免受黑暗势力的威胁。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《时光之轮》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑镜", "西部世界", "怪奇物语", "使女的故事", "曼达洛人"],
+        "preferences": ["科幻剧", "反乌托邦", "悬疑"],
+        "pref_weight_info": "科幻剧:0.9, 反乌托邦:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "羊毛战记",
+          "director": "莫滕·泰杜姆",
+          "genres": ["科幻", "剧情", "惊悚"],
+          "overview": "在一个后末日世界，人类生活在一个巨大的地下筒仓中，外界被认为是有毒的，但一名工程师开始质疑筒仓的真相。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《羊毛战记》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["饥饿游戏", "分歧者", "移动迷宫", "赐予者", "宿主"],
+        "preferences": ["青少年科幻", "反乌托邦", "冒险"],
+        "pref_weight_info": "青少年科幻:0.9, 反乌托邦:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "第五波",
+          "director": "J·布莱克森",
+          "genres": ["科幻", "冒险", "惊悚"],
+          "overview": "外星人入侵地球，通过五波攻击几乎消灭了人类，少女凯西必须在末日世界中生存并寻找失踪的弟弟。",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.2/5.0]\n    P --> Q[推荐《第五波》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["谍影重重", "007", "碟中谍", "王牌特工", "秘密特工"],
+        "preferences": ["特工", "动作", "悬疑"],
+        "pref_weight_info": "特工:0.9, 动作:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "红色通缉令",
+          "director": "罗森·马歇尔·瑟伯",
+          "genres": ["动作", "喜剧", "惊悚"],
+          "overview": "国际刑警组织发布红色通缉令，追捕世界头号艺术大盗，FBI侧写师与两名竞争对手被迫合作，展开全球追捕。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《红色通缉令》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["阿凡达", "地心引力", "星际穿越", "火星救援", "降临"],
+        "preferences": ["太空科幻", "视觉效果", "硬科幻"],
+        "pref_weight_info": "太空科幻:0.9, 视觉效果:0.8, 硬科幻:0.7",
+        "movie_info": {
+          "title": "星际探索",
+          "director": "詹姆斯·格雷",
+          "genres": ["科幻", "冒险", "剧情"],
+          "overview": "一名宇航员前往海王星寻找20年前失踪的父亲，在深空旅行中面对孤独和内心恐惧，探索人类存在的意义。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《星际探索》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["权力的游戏", "猎魔人", "指环王", "霍比特人", "纳尼亚传奇"],
+        "preferences": ["史诗奇幻", "中世纪", "魔法"],
+        "pref_weight_info": "史诗奇幻:0.9, 中世纪:0.8, 魔法:0.7",
+        "movie_info": {
+          "title": "时光之轮",
+          "director": "乌塔·布里斯维茨",
+          "genres": ["奇幻", "冒险", "剧情"],
+          "overview": "在一个奇幻世界中，五位年轻人发现其中一人可能是转世的龙，他们必须踏上危险的旅程，拯救世界免受黑暗势力的威胁。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《时光之轮》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑天鹅", "梦之安魂曲", "母亲", "夜行动物", "她"],
+        "preferences": ["心理惊悚", "艺术电影", "复杂叙事"],
+        "pref_weight_info": "心理惊悚:0.9, 艺术电影:0.8, 复杂叙事:0.7",
+        "movie_info": {
+          "title": "纪念品",
+          "director": "乔安娜·霍格",
+          "genres": ["剧情", "爱情"],
+          "overview": "一位电影专业学生在1980年代的伦敦与一位神秘男子展开一段危险的关系，这段经历深刻影响了她的艺术创作和个人成长。",
+          "vote_average": 3.8
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.4/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.6/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 3.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《纪念品》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["寄生虫", "燃烧", "小姐", "杀人回忆", "老男孩"],
+        "preferences": ["韩国电影", "社会批判", "悬疑"],
+        "pref_weight_info": "韩国电影:0.9, 社会批判:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "分手的决心",
+          "director": "朴赞郁",
+          "genres": ["剧情", "悬疑", "爱情"],
+          "overview": "一名侦探在调查一起死亡案件时，与死者的遗孀产生了复杂的情感纠葛，真相在调查过程中逐渐浮出水面。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.6]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《分手的决心》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["狮子王", "小美人鱼", "美女与野兽", "阿拉丁", "风中奇缘"],
+        "preferences": ["迪士尼", "动画", "音乐"],
+        "pref_weight_info": "迪士尼:0.9, 动画:0.8, 音乐:0.7",
+        "movie_info": {
+          "title": "魔法满屋",
+          "director": "杰拉德·布什",
+          "genres": ["动画", "冒险", "喜剧", "家庭"],
+          "overview": "哥伦比亚一个魔法家族中唯一没有魔法的女孩米拉贝尔，在家园面临危机时挺身而出，拯救家族魔法。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《魔法满屋》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["搏击俱乐部", "七宗罪", "消失的爱人", "龙纹身的女孩", "十二宫"],
+        "preferences": ["大卫·芬奇", "悬疑", "黑暗风格"],
+        "pref_weight_info": "大卫·芬奇:0.9, 悬疑:0.8, 黑暗风格:0.7",
+        "movie_info": {
+          "title": "心理游戏",
+          "director": "大卫·芬奇",
+          "genres": ["悬疑", "惊悚", "剧情"],
+          "overview": "亿万富翁尼古拉斯收到弟弟赠送的一张游戏卡，参与一个神秘游戏后，生活逐渐失控，陷入巨大的阴谋中。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《心理游戏》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["老友记", "生活大爆炸", "办公室", "摩登家庭", "破产姐妹"],
+        "preferences": ["情景喜剧", "幽默", "轻松"],
+        "pref_weight_info": "情景喜剧:0.9, 幽默:0.8, 轻松:0.7",
+        "movie_info": {
+          "title": "废柴联盟",
+          "director": "乔·罗素",
+          "genres": ["喜剧"],
+          "overview": "一群社区大学的学生组成学习小组，在古怪的西班牙语老师的带领下，经历各种荒诞有趣的故事。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《废柴联盟》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["指环王", "霍比特人", "纳尼亚传奇", "哈利波特", "黄金罗盘"],
+        "preferences": ["奇幻", "冒险", "史诗"],
+        "pref_weight_info": "奇幻:0.9, 冒险:0.8, 史诗:0.7",
+        "movie_info": {
+          "title": "时光之轮",
+          "director": "乌塔·布里斯维茨",
+          "genres": ["奇幻", "冒险", "剧情"],
+          "overview": "在一个奇幻世界中，五位年轻人发现其中一人可能是转世的龙，他们必须踏上危险的旅程，拯救世界免受黑暗势力的威胁。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《时光之轮》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑镜", "西部世界", "怪奇物语", "使女的故事", "曼达洛人"],
+        "preferences": ["科幻剧", "反乌托邦", "悬疑"],
+        "pref_weight_info": "科幻剧:0.9, 反乌托邦:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "羊毛战记",
+          "director": "莫滕·泰杜姆",
+          "genres": ["科幻", "剧情", "惊悚"],
+          "overview": "在一个后末日世界，人类生活在一个巨大的地下筒仓中，外界被认为是有毒的，但一名工程师开始质疑筒仓的真相。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《羊毛战记》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["饥饿游戏", "分歧者", "移动迷宫", "赐予者", "宿主"],
+        "preferences": ["青少年科幻", "反乌托邦", "冒险"],
+        "pref_weight_info": "青少年科幻:0.9, 反乌托邦:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "第五波",
+          "director": "J·布莱克森",
+          "genres": ["科幻", "冒险", "惊悚"],
+          "overview": "外星人入侵地球，通过五波攻击几乎消灭了人类，少女凯西必须在末日世界中生存并寻找失踪的弟弟。",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.2/5.0]\n    P --> Q[推荐《第五波》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["谍影重重", "007", "碟中谍", "王牌特工", "秘密特工"],
+        "preferences": ["特工", "动作", "悬疑"],
+        "pref_weight_info": "特工:0.9, 动作:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "红色通缉令",
+          "director": "罗森·马歇尔·瑟伯",
+          "genres": ["动作", "喜剧", "惊悚"],
+          "overview": "国际刑警组织发布红色通缉令，追捕世界头号艺术大盗，FBI侧写师与两名竞争对手被迫合作，展开全球追捕。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《红色通缉令》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["阿凡达", "地心引力", "星际穿越", "火星救援", "降临"],
+        "preferences": ["太空科幻", "视觉效果", "硬科幻"],
+        "pref_weight_info": "太空科幻:0.9, 视觉效果:0.8, 硬科幻:0.7",
+        "movie_info": {
+          "title": "星际探索",
+          "director": "詹姆斯·格雷",
+          "genres": ["科幻", "冒险", "剧情"],
+          "overview": "一名宇航员前往海王星寻找20年前失踪的父亲，在深空旅行中面对孤独和内心恐惧，探索人类存在的意义。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《星际探索》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["权力的游戏", "猎魔人", "指环王", "霍比特人", "纳尼亚传奇"],
+        "preferences": ["史诗奇幻", "中世纪", "魔法"],
+        "pref_weight_info": "史诗奇幻:0.9, 中世纪:0.8, 魔法:0.7",
+        "movie_info": {
+          "title": "时光之轮",
+          "director": "乌塔·布里斯维茨",
+          "genres": ["奇幻", "冒险", "剧情"],
+          "overview": "在一个奇幻世界中，五位年轻人发现其中一人可能是转世的龙，他们必须踏上危险的旅程，拯救世界免受黑暗势力的威胁。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《时光之轮》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑天鹅", "梦之安魂曲", "母亲", "夜行动物", "她"],
+        "preferences": ["心理惊悚", "艺术电影", "复杂叙事"],
+        "pref_weight_info": "心理惊悚:0.9, 艺术电影:0.8, 复杂叙事:0.7",
+        "movie_info": {
+          "title": "纪念品",
+          "director": "乔安娜·霍格",
+          "genres": ["剧情", "爱情"],
+          "overview": "一位电影专业学生在1980年代的伦敦与一位神秘男子展开一段危险的关系，这段经历深刻影响了她的艺术创作和个人成长。",
+          "vote_average": 3.8
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.4/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.6/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 3.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《纪念品》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["寄生虫", "燃烧", "小姐", "杀人回忆", "老男孩"],
+        "preferences": ["韩国电影", "社会批判", "悬疑"],
+        "pref_weight_info": "韩国电影:0.9, 社会批判:0.8, 悬疑:0.7",
+        "movie_info": {
+          "title": "分手的决心",
+          "director": "朴赞郁",
+          "genres": ["剧情", "悬疑", "爱情"],
+          "overview": "一名侦探在调查一起死亡案件时，与死者的遗孀产生了复杂的情感纠葛，真相在调查过程中逐渐浮出水面。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.6]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《分手的决心》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["教父", "好家伙", "美国往事", "疤面煞星", "盗火线"],
+        "preferences": ["黑帮", "犯罪", "经典"],
+        "pref_weight_info": "黑帮:0.9, 犯罪:0.85, 经典:0.8",
+        "movie_info": {
+          "title": "爱尔兰人",
+          "director": "马丁·斯科塞斯",
+          "genres": ["剧情", "犯罪", "传记"],
+          "overview": "通过二战老兵弗兰克的视角，讲述了战后美国有组织犯罪的故事，跨越数十年，记录了黑帮的兴衰历程。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《爱尔兰人》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["千与千寻", "龙猫", "幽灵公主", "天空之城", "魔女宅急便"],
+        "preferences": ["动画", "奇幻", "宫崎骏"],
+        "pref_weight_info": "动画:0.9, 奇幻:0.85, 宫崎骏:0.95",
+        "movie_info": {
+          "title": "哈尔的移动城堡",
+          "director": "宫崎骏",
+          "genres": ["动画", "冒险", "奇幻"],
+          "overview": "年轻的制帽匠苏菲被荒野女巫诅咒变成老妇人，她离开家并在神秘的移动城堡中遇到了魔法师哈尔，两人共同面对战争的威胁。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《哈尔的移动城堡》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["低俗小说", "落水狗", "被解救的姜戈", "八恶人", "好莱坞往事"],
+        "preferences": ["黑色幽默", "非线性叙事", "暴力美学"],
+        "pref_weight_info": "黑色幽默:0.9, 非线性叙事:0.85, 暴力美学:0.8",
+        "movie_info": {
+          "title": "杀死比尔",
+          "director": "昆汀·塔伦蒂诺",
+          "genres": ["动作", "犯罪", "惊悚"],
+          "overview": "一名叫「新娘」的女杀手想脱离所属的暗杀组织，却在婚礼上遭到组织首脑比尔与其党羽的虐杀。她头部中弹整整昏迷4年，醒来后展开复仇计划。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《杀死比尔》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["闪灵", "遗传厄运", "招魂", "小丑回魂", "寂静之地"],
+        "preferences": ["恐怖", "心理惊悚", "超自然"],
+        "pref_weight_info": "恐怖:0.9, 心理惊悚:0.8, 超自然:0.7",
+        "movie_info": {
+          "title": "仲夏夜惊魂",
+          "director": "阿里·艾斯特",
+          "genres": ["恐怖", "悬疑"],
+          "overview": "一对情侣来到瑞典乡间参加一个夏季节日活动，却发现自己陷入了一个诡异的异教组织，面临着无法想象的恐怖。",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.6/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.0]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.2/5.0]\n    P --> Q[推荐《仲夏夜惊魂》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["寻梦环游记", "疯狂动物城", "冰雪奇缘", "超人总动员", "玩具总动员"],
+        "preferences": ["动画", "家庭", "冒险"],
+        "pref_weight_info": "动画:0.9, 家庭:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "蜘蛛侠：平行宇宙",
+          "director": "鲍勃·佩尔西凯蒂",
+          "genres": ["动画", "动作", "冒险", "科幻"],
+          "overview": "少年迈尔斯在一次意外中被放射性蜘蛛咬伤，获得了超能力，并遇到了来自其他宇宙的蜘蛛侠们，共同对抗邪恶势力。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《蜘蛛侠：平行宇宙》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["银翼杀手2049", "降临", "地心引力", "火星救援", "星际穿越"],
+        "preferences": ["硬科幻", "视觉效果", "哲学思考"],
+        "pref_weight_info": "硬科幻:0.9, 视觉效果:0.8, 哲学思考:0.7",
+        "movie_info": {
+          "title": "沙丘",
+          "director": "丹尼斯·维伦纽瓦",
+          "genres": ["科幻", "冒险", "剧情"],
+          "overview": "天赋异禀的少年保罗被命运指引，为了保卫家族和人民，决心前往浩瀚宇宙间最危险的星球，开启一场惊心动魄的冒险。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《沙丘》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["宿醉", "超级坏", "伴娘", "波拉特", "四十岁的老处男"],
+        "preferences": ["喜剧", "荒诞", "R级幽默"],
+        "pref_weight_info": "喜剧:0.9, 荒诞:0.7, R级幽默:0.8",
+        "movie_info": {
+          "title": "泰迪熊",
+          "director": "塞思·麦克法兰",
+          "genres": ["喜剧", "奇幻"],
+          "overview": "男孩约翰收到一只泰迪熊玩偶作为圣诞礼物，许愿希望泰迪熊能说话，成为他真正的朋友。奇迹发生了，泰迪熊有了生命，但长大后却变成了一个粗俗的熊。",
+          "vote_average": 3.8
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《泰迪熊》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["禁闭岛", "消失的爱人", "看不见的客人", "利刃出鞘", "记忆碎片"],
+        "preferences": ["悬疑", "反转", "心理惊悚"],
+        "pref_weight_info": "悬疑:0.9, 反转:0.8, 心理惊悚:0.7",
+        "movie_info": {
+          "title": "谜一样的双眼",
+          "director": "胡安·何塞·坎帕内利亚",
+          "genres": ["剧情", "悬疑", "爱情"],
+          "overview": "退休检察官本杰明决定将25年前的一起强奸谋杀案写成小说，在调查过程中发现案件背后隐藏着惊人的秘密和未了的情感。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《谜一样的双眼》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["疾速追杀", "疯狂的麦克斯4", "谍影重重", "飓风营救", "敢死队"],
+        "preferences": ["动作", "打斗", "刺激"],
+        "pref_weight_info": "动作:0.9, 打斗:0.8, 刺激:0.7",
+        "movie_info": {
+          "title": "惊天营救",
+          "director": "山姆·哈格雷夫",
+          "genres": ["动作", "惊悚", "犯罪"],
+          "overview": "一名黑市雇佣兵接到营救入狱的黑帮大佬被绑架儿子的任务，深入孟加拉国的黑暗世界，展开一场生死营救。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《惊天营救》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["恋恋笔记本", "一天", "怦然心动", "时空恋旅人", "爱乐之城"],
+        "preferences": ["浪漫", "爱情", "感人"],
+        "pref_weight_info": "浪漫:0.9, 爱情:0.8, 感人:0.7",
+        "movie_info": {
+          "title": "遇见你之前",
+          "director": "西娅·夏罗克",
+          "genres": ["剧情", "爱情"],
+          "overview": "活泼的小镇女孩露易莎照顾因车祸全身瘫痪的威尔，两个世界的人相遇，改变了彼此的人生轨迹。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《遇见你之前》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["地球脉动", "我们的星球", "蓝色星球", "王朝", "七个世界一个星球"],
+        "preferences": ["纪录片", "自然", "教育"],
+        "pref_weight_info": "纪录片:0.9, 自然:0.8, 教育:0.7",
+        "movie_info": {
+          "title": "我的章鱼老师",
+          "director": "皮帕·埃尔利希",
+          "genres": ["纪录片"],
+          "overview": "电影制作人克雷格·福斯特在南非的海藻林中与一只普通的章鱼建立了不寻常的友谊，这段关系改变了克雷格对人与自然关系的理解。",
+          "vote_average": 4.7
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《我的章鱼老师》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑客帝国", "攻壳机动队", "银翼杀手", "超体", "我，机器人"],
+        "preferences": ["赛博朋克", "科幻", "哲学"],
+        "pref_weight_info": "赛博朋克:0.9, 科幻:0.8, 哲学:0.7",
+        "movie_info": {
+          "title": "阿丽塔：战斗天使",
+          "director": "罗伯特·罗德里格兹",
+          "genres": ["动作", "科幻", "冒险"],
+          "overview": "在26世纪的世界中，医生戴森在垃圾场发现了一个机械少女的残躯，将其修复后取名阿丽塔，但她失去了记忆，在探寻身世的过程中逐渐发现自己的战斗使命。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《阿丽塔：战斗天使》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["V字仇杀队", "1984", "华氏451", "妙想天开", "撕裂的末日"],
+        "preferences": ["反乌托邦", "政治", "思想控制"],
+        "pref_weight_info": "反乌托邦:0.9, 政治:0.8, 思想控制:0.7",
+        "movie_info": {
+          "title": "雪国列车",
+          "director": "奉俊昊",
+          "genres": ["科幻", "动作", "剧情"],
+          "overview": "在一场突如其来的气候灾难后，地球进入冰河时代，幸存的人类生活在一列永恒行驶的列车上，但车上的阶级分化引发了革命。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《雪国列车》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["这个杀手不太冷", "天使爱美丽", "蓝白红三部曲", "潜水钟与蝴蝶", "阿黛尔的生活"],
+        "preferences": ["法国电影", "文艺", "情感细腻"],
+        "pref_weight_info": "法国电影:0.9, 文艺:0.8, 情感细腻:0.7",
+        "movie_info": {
+          "title": "燃烧女子的肖像",
+          "director": "瑟琳·席安玛",
+          "genres": ["剧情", "爱情", "历史"],
+          "overview": "18世纪的法国，一位女画家被委托为一位富家小姐绘制肖像，两人在封闭的岛屿上发展出一段禁忌的爱情。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《燃烧女子的肖像》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["逃出绝命镇", "我们", "万能钥匙", "小岛惊魂", "第六感"],
+        "preferences": ["心理恐怖", "社会隐喻", "反转结局"],
+        "pref_weight_info": "心理恐怖:0.9, 社会隐喻:0.8, 反转结局:0.7",
+        "movie_info": {
+          "title": "遗传厄运",
+          "director": "阿里·艾斯特",
+          "genres": ["恐怖", "悬疑", "惊悚"],
+          "overview": "格雷厄姆家族的祖母去世后，家中开始发生一系列诡异事件，家族成员逐渐发现他们被一个可怕的命运所诅咒。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《遗传厄运》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["摔跤吧！爸爸", "三傻大闹宝莱坞", "神秘巨星", "巴霍巴利王", "小萝莉的猴神大叔"],
+        "preferences": ["印度电影", "歌舞", "社会问题"],
+        "pref_weight_info": "印度电影:0.9, 歌舞:0.8, 社会问题:0.7",
+        "movie_info": {
+          "title": "厕所英雄",
+          "director": "什里·纳拉扬·辛格",
+          "genres": ["剧情", "喜剧", "爱情"],
+          "overview": "一名受过教育的女子嫁给乡村男子后，发现村里没有厕所，她为争取修建厕所的权利而与传统观念作斗争。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《厕所英雄》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["霸王别姬", "活着", "阳光灿烂的日子", "鬼子来了", "红高粱"],
+        "preferences": ["中国电影", "历史", "人性"],
+        "pref_weight_info": "中国电影:0.9, 历史:0.8, 人性:0.7",
+        "movie_info": {
+          "title": "一一",
+          "director": "杨德昌",
+          "genres": ["剧情", "家庭"],
+          "overview": "通过台北一家人的日常生活，展现了从童年到老年的生命历程，探讨了爱情、婚姻、家庭和生死等永恒主题。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《一一》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["罗生门", "七武士", "东京物语", "千与千寻", "你的名字"],
+        "preferences": ["日本电影", "人性探讨", "动画"],
+        "pref_weight_info": "日本电影:0.9, 人性探讨:0.8, 动画:0.7",
+        "movie_info": {
+          "title": "幽灵公主",
+          "director": "宫崎骏",
+          "genres": ["动画", "冒险", "奇幻"],
+          "overview": "少年阿席达卡为解除诅咒来到西方，卷入人类与森林神祇之间的战争，并遇到被狼神养大的幽灵公主。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《幽灵公主》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["楚门的世界", "美丽心灵的永恒阳光", "暖暖内含光", "她", "龙虾"],
+        "preferences": ["爱情科幻", "哲学思考", "独特设定"],
+        "pref_weight_info": "爱情科幻:0.9, 哲学思考:0.8, 独特设定:0.7",
+        "movie_info": {
+          "title": "黑镜：班尼斯特归来",
+          "director": "查理·布鲁克",
+          "genres": ["科幻", "剧情", "爱情"],
+          "overview": "在一个近未来的世界，人们可以通过技术重温记忆，一名男子利用这项技术寻找失踪的爱人，却发现了惊人的真相。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《黑镜：班尼斯特归来》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["疯狂原始人", "驯龙高手", "怪物公司", "怪兽电力公司", "海底总动员"],
+        "preferences": ["动画", "家庭", "冒险"],
+        "pref_weight_info": "动画:0.9, 家庭:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "寻梦环游记",
+          "director": "李·昂克里奇",
+          "genres": ["动画", "冒险", "家庭", "音乐"],
+          "overview": "墨西哥男孩米格尔热爱音乐，但家族却禁止音乐，他在亡灵节意外进入亡灵世界，寻找自己的音乐家祖先。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.6]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《寻梦环游记》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["盗梦空间", "源代码", "前目的地", "恐怖游轮", "蝴蝶效应"],
+        "preferences": ["烧脑", "科幻", "时间循环"],
+        "pref_weight_info": "烧脑:0.9, 科幻:0.8, 时间循环:0.85",
+        "movie_info": {
+          "title": "明日边缘",
+          "director": "道格·里曼",
+          "genres": ["动作", "科幻"],
+          "overview": "一名军事公关专员被迫加入一场对抗外星人的战争，却意外获得了重置时间的能力，在不断重复的生死循环中寻找胜利的方法。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《明日边缘》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["教父", "好家伙", "美国往事", "疤面煞星", "盗火线"],
+        "preferences": ["黑帮", "犯罪", "经典"],
+        "pref_weight_info": "黑帮:0.9, 犯罪:0.85, 经典:0.8",
+        "movie_info": {
+          "title": "爱尔兰人",
+          "director": "马丁·斯科塞斯",
+          "genres": ["剧情", "犯罪", "传记"],
+          "overview": "通过二战老兵弗兰克的视角，讲述了战后美国有组织犯罪的故事，跨越数十年，记录了黑帮的兴衰历程。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《爱尔兰人》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["千与千寻", "龙猫", "幽灵公主", "天空之城", "魔女宅急便"],
+        "preferences": ["动画", "奇幻", "宫崎骏"],
+        "pref_weight_info": "动画:0.9, 奇幻:0.85, 宫崎骏:0.95",
+        "movie_info": {
+          "title": "哈尔的移动城堡",
+          "director": "宫崎骏",
+          "genres": ["动画", "冒险", "奇幻"],
+          "overview": "年轻的制帽匠苏菲被荒野女巫诅咒变成老妇人，她离开家并在神秘的移动城堡中遇到了魔法师哈尔，两人共同面对战争的威胁。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.7]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.8/5.0]\n    P --> Q[推荐《哈尔的移动城堡》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["低俗小说", "落水狗", "被解救的姜戈", "八恶人", "好莱坞往事"],
+        "preferences": ["黑色幽默", "非线性叙事", "暴力美学"],
+        "pref_weight_info": "黑色幽默:0.9, 非线性叙事:0.85, 暴力美学:0.8",
+        "movie_info": {
+          "title": "杀死比尔",
+          "director": "昆汀·塔伦蒂诺",
+          "genres": ["动作", "犯罪", "惊悚"],
+          "overview": "一名叫「新娘」的女杀手想脱离所属的暗杀组织，却在婚礼上遭到组织首脑比尔与其党羽的虐杀。她头部中弹整整昏迷4年，醒来后展开复仇计划。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.5]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《杀死比尔》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["闪灵", "遗传厄运", "招魂", "小丑回魂", "寂静之地"],
+        "preferences": ["恐怖", "心理惊悚", "超自然"],
+        "pref_weight_info": "恐怖:0.9, 心理惊悚:0.8, 超自然:0.7",
+        "movie_info": {
+          "title": "仲夏夜惊魂",
+          "director": "阿里·艾斯特",
+          "genres": ["恐怖", "悬疑"],
+          "overview": "一对情侣来到瑞典乡间参加一个夏季节日活动，却发现自己陷入了一个诡异的异教组织，面临着无法想象的恐怖。",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.5/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.6/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.0]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.2/5.0]\n    P --> Q[推荐《仲夏夜惊魂》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["寻梦环游记", "疯狂动物城", "冰雪奇缘", "超人总动员", "玩具总动员"],
+        "preferences": ["动画", "家庭", "冒险"],
+        "pref_weight_info": "动画:0.9, 家庭:0.8, 冒险:0.7",
+        "movie_info": {
+          "title": "蜘蛛侠：平行宇宙",
+          "director": "鲍勃·佩尔西凯蒂",
+          "genres": ["动画", "动作", "冒险", "科幻"],
+          "overview": "少年迈尔斯在一次意外中被放射性蜘蛛咬伤，获得了超能力，并遇到了来自其他宇宙的蜘蛛侠们，共同对抗邪恶势力。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.3]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.6/5.0]\n    P --> Q[推荐《蜘蛛侠：平行宇宙》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["银翼杀手2049", "降临", "地心引力", "火星救援", "星际穿越"],
+        "preferences": ["硬科幻", "视觉效果", "哲学思考"],
+        "pref_weight_info": "硬科幻:0.9, 视觉效果:0.8, 哲学思考:0.7",
+        "movie_info": {
+          "title": "沙丘",
+          "director": "丹尼斯·维伦纽瓦",
+          "genres": ["科幻", "冒险", "剧情"],
+          "overview": "天赋异禀的少年保罗被命运指引，为了保卫家族和人民，决心前往浩瀚宇宙间最危险的星球，开启一场惊心动魄的冒险。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.8/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.8]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《沙丘》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["宿醉", "超级坏", "伴娘", "波拉特", "四十岁的老处男"],
+        "preferences": ["喜剧", "荒诞", "R级幽默"],
+        "pref_weight_info": "喜剧:0.9, 荒诞:0.7, R级幽默:0.8",
+        "movie_info": {
+          "title": "泰迪熊",
+          "director": "塞思·麦克法兰",
+          "genres": ["喜剧", "奇幻"],
+          "overview": "男孩约翰收到一只泰迪熊玩偶作为圣诞礼物，许愿希望泰迪熊能说话，成为他真正的朋友。奇迹发生了，泰迪熊有了生命，但长大后却变成了一个粗俗的熊。",
+          "vote_average": 3.8
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.6/3.0]\n    F --> J[导演得分: 0.7/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.2]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.3/5.0]\n    P --> Q[推荐《泰迪熊》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["禁闭岛", "消失的爱人", "看不见的客人", "利刃出鞘", "记忆碎片"],
+        "preferences": ["悬疑", "反转", "心理惊悚"],
+        "pref_weight_info": "悬疑:0.9, 反转:0.8, 心理惊悚:0.7",
+        "movie_info": {
+          "title": "谜一样的双眼",
+          "director": "胡安·何塞·坎帕内利亚",
+          "genres": ["剧情", "悬疑", "爱情"],
+          "overview": "退休检察官本杰明决定将25年前的一起强奸谋杀案写成小说，在调查过程中发现案件背后隐藏着惊人的秘密和未了的情感。",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.7/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.7/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.1]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《谜一样的双眼》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["疾速追杀", "疯狂的麦克斯4", "谍影重重", "飓风营救", "敢死队"],
+        "preferences": ["动作", "打斗", "刺激"],
+        "pref_weight_info": "动作:0.9, 打斗:0.8, 刺激:0.7",
+        "movie_info": {
+          "title": "惊天营救",
+          "director": "山姆·哈格雷夫",
+          "genres": ["动作", "惊悚", "犯罪"],
+          "overview": "一名黑市雇佣兵接到营救入狱的黑帮大佬被绑架儿子的任务，深入孟加拉国的黑暗世界，展开一场生死营救。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.8/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.4/5.0]\n    P --> Q[推荐《惊天营救》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["恋恋笔记本", "一天", "怦然心动", "时空恋旅人", "爱乐之城"],
+        "preferences": ["浪漫", "爱情", "感人"],
+        "pref_weight_info": "浪漫:0.9, 爱情:0.8, 感人:0.7",
+        "movie_info": {
+          "title": "遇见你之前",
+          "director": "西娅·夏罗克",
+          "genres": ["剧情", "爱情"],
+          "overview": "活泼的小镇女孩露易莎照顾因车祸全身瘫痪的威尔，两个世界的人相遇，改变了彼此的人生轨迹。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.5/0.8]\n    G --> K[演员得分: 0.8/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.4]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.5/5.0]\n    P --> Q[推荐《遇见你之前》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["地球脉动", "我们的星球", "蓝色星球", "王朝", "七个世界一个星球"],
+        "preferences": ["纪录片", "自然", "教育"],
+        "pref_weight_info": "纪录片:0.9, 自然:0.8, 教育:0.7",
+        "movie_info": {
+          "title": "我的章鱼老师",
+          "director": "皮帕·埃尔利希",
+          "genres": ["纪录片"],
+          "overview": "电影制作人克雷格·福斯特在南非的海藻林中与一只普通的章鱼建立了不寻常的友谊，这段关系改变了克雷格对人与自然关系的理解。",
+          "vote_average": 4.7
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "graph TD\n    Start[开始评分预测流程] --> Extract[特征提取模块]\n    Start --> Pref[用户偏好分析]\n    Extract --> Analysis[多维度特征分析]\n    Pref --> Analysis\n    Analysis --> GenreMatch[类型匹配度计算]\n    Analysis --> DirectorMatch[导演匹配度计算]\n    Analysis --> ActorMatch[演员匹配度计算]\n    Analysis --> YearMatch[年代匹配度计算]\n    GenreMatch --> GenreScore[类型匹配: 2.7/3.0]\n    DirectorMatch --> DirectorScore[导演匹配: 0.6/0.8]\n    ActorMatch --> ActorScore[演员匹配: 0.7/1.0]\n    YearMatch --> YearScore[年代匹配: 0.2/0.2]\n    GenreScore --> Total[综合得分计算]\n    DirectorScore --> Total\n    ActorScore --> Total\n    YearScore --> Total\n    Total --> RawScore[原始总分: 4.2]\n    RawScore --> Adjust[评分标准化调整]\n    Adjust --> Final[最终评分: 4.8/5.0]\n    Final --> Recommend[推荐《我的章鱼老师》]\n    \n    style Start fill:#e1f5fe,stroke:#01579b,stroke-width:2px\n    style Extract fill:#bbdefb\n    style Pref fill:#bbdefb\n    style Analysis fill:#80deea\n    style GenreMatch fill:#ffcdd2\n    style DirectorMatch fill:#c8e6c9\n    style ActorMatch fill:#fff9c4\n    style YearMatch fill:#d1c4e9\n    style GenreScore fill:#ffcdd2\n    style DirectorScore fill:#c8e6c9\n    style ActorScore fill:#fff9c4\n    style YearScore fill:#d1c4e9\n    style Total fill:#ffccbc\n    style RawScore fill:#ffccbc\n    style Adjust fill:#ffccbc\n    style Final fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px\n    style Recommend fill:#e8f5e8,stroke:#4caf50,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["黑客帝国", "攻壳机动队", "银翼杀手", "超体", "我，机器人"],
+        "preferences": ["赛博朋克", "科幻", "哲学"],
+        "pref_weight_info": "赛博朋克:0.9, 科幻:0.8, 哲学:0.7",
+        "movie_info": {
+          "title": "阿丽塔：战斗天使",
+          "director": "罗伯特·罗德里格兹",
+          "genres": ["动作", "科幻", "冒险"],
+          "overview": "在26世纪的世界中，医生戴森在垃圾场发现了一个机械少女的残躯，将其修复后取名阿丽塔，但她失去了记忆，在探寻身世的过程中逐渐发现自己的战斗使命。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph LR\n    A[评分预测开始] --> B[输入处理]\n    B --> C[电影特征提取]\n    B --> D[用户画像分析]\n    C --> E[特征工程]\n    D --> E\n    E --> F{匹配度计算}\n    F -->|类型| G[科幻匹配: 85%]\n    F -->|导演| H[导演匹配: 75%]\n    F -->|演员| I[演员匹配: 80%]\n    F -->|年代| J[年代匹配: 90%]\n    G --> K[加权计算]\n    H --> K\n    I --> K\n    J --> K\n    K --> L[基础分: 3.8]\n    L --> M[调整系数: +0.7]\n    M --> N[最终得分: 4.5]\n    N --> O[⭐推荐观看《阿丽塔：战斗天使》⭐]\n    \n    style A fill:#f3e5f5,stroke:#4a148c,stroke-width:2px\n    style B fill:#e1bee7\n    style C fill:#ce93d8\n    style D fill:#ce93d8\n    style E fill:#ba68c8\n    style F fill:#ab47bc\n    style G fill:#ffeb3b\n    style H fill:#4caf50\n    style I fill:#2196f3\n    style J fill:#ff9800\n    style K fill:#7e57c2\n    style L fill:#5e35b1\n    style M fill:#3949ab\n    style N fill:#1e88e5\n    style O fill:#43a047,stroke:#1b5e20,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["V字仇杀队", "1984", "华氏451", "妙想天开", "撕裂的末日"],
+        "preferences": ["反乌托邦", "政治", "思想控制"],
+        "pref_weight_info": "反乌托邦:0.9, 政治:0.8, 思想控制:0.7",
+        "movie_info": {
+          "title": "雪国列车",
+          "director": "奉俊昊",
+          "genres": ["科幻", "动作", "剧情"],
+          "overview": "在一场突如其来的气候灾难后，地球进入冰河时代，幸存的人类生活在一列永恒行驶的列车上，但车上的阶级分化引发了革命。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph TB\n    start(开始预测) --> input\n    subgraph 输入处理\n      input[接收输入数据] --> movie[解析电影信息]\n      input --> user[分析用户偏好]\n    end\n    \n    movie --> features[提取特征向量]\n    user --> pref[偏好权重计算]\n    \n    features --> matching[相似度匹配]\n    pref --> matching\n    \n    matching --> calc[评分计算引擎]\n    \n    subgraph 维度匹配\n      calc --> genre_calc[类型匹配度: 0.85]\n      calc --> director_calc[导演匹配度: 0.75]\n      calc --> theme_calc[主题匹配度: 0.90]\n      calc --> style_calc[风格匹配度: 0.80]\n    end\n    \n    genre_calc --> combine[综合加权]\n    director_calc --> combine\n    theme_calc --> combine\n    style_calc --> combine\n    \n    combine --> raw[原始评分: 3.9]\n    raw --> adjust[调整因子: +0.5]\n    adjust --> final[最终评分: 4.4/5.0]\n    final --> result[🎬 强烈推荐《雪国列车》]\n    \n    style start fill:#ffebee,stroke:#b71c1c,stroke-width:2px\n    style input fill:#ffcdd2\n    style movie fill:#ffcdd2\n    style user fill:#ffcdd2\n    style features fill:#ef9a9a\n    style pref fill:#ef9a9a\n    style matching fill:#e57373\n    style calc fill:#ef5350\n    style genre_calc fill:#ff8a65\n    style director_calc fill:#ff8a65\n    style theme_calc fill:#ff8a65\n    style style_calc fill:#ff8a65\n    style combine fill:#ff5722\n    style raw fill:#d84315\n    style adjust fill:#d84315\n    style final fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style result fill:#a5d6a7,stroke:#388e3c,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["这个杀手不太冷", "天使爱美丽", "蓝白红三部曲", "潜水钟与蝴蝶", "阿黛尔的生活"],
+        "preferences": ["法国电影", "文艺", "情感细腻"],
+        "pref_weight_info": "法国电影:0.9, 文艺:0.8, 情感细腻:0.7",
+        "movie_info": {
+          "title": "燃烧女子的肖像",
+          "director": "瑟琳·席安玛",
+          "genres": ["剧情", "爱情", "历史"],
+          "overview": "18世纪的法国，一位女画家被委托为一位富家小姐绘制肖像，两人在封闭的岛屿上发展出一段禁忌的爱情。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph BT\n    recommendation[推荐结果] --> final_score\n    final_score[最终评分: 4.6/5.0] --> adjustment\n    adjustment[评分调整] --> raw_total\n    raw_total[原始总分: 4.2] --> aggregation\n    aggregation[得分聚合] --> genre_dimension\n    aggregation --> director_dimension\n    aggregation --> acting_dimension\n    aggregation --> period_dimension\n    \n    genre_dimension[类型维度: 2.6/3.0] --> genre_calc\n    director_dimension[导演维度: 0.6/0.8] --> director_calc\n    acting_dimension[表演维度: 0.8/1.0] --> acting_calc\n    period_dimension[年代维度: 0.2/0.2] --> period_calc\n    \n    genre_calc[类型匹配计算] --> analysis\n    director_calc[导演匹配计算] --> analysis\n    acting_calc[表演匹配计算] --> analysis\n    period_calc[年代匹配计算] --> analysis\n    \n    analysis[多维度分析] --> data_input\n    data_input[数据输入] --> movie_data[电影数据]\n    data_input --> user_profile[用户画像]\n    \n    movie_data[《燃烧女子的肖像》特征] --> start\n    user_profile[用户偏好分析] --> start\n    start[算法开始] --> recommendation\n    \n    style start fill:#fce4ec,stroke:#880e4f,stroke-width:2px\n    style movie_data fill:#f8bbd9\n    style user_profile fill:#f8bbd9\n    style data_input fill:#f48fb1\n    style analysis fill:#f06292\n    style genre_calc fill:#ec407a\n    style director_calc fill:#ec407a\n    style acting_calc fill:#ec407a\n    style period_calc fill:#ec407a\n    style genre_dimension fill:#d81b60\n    style director_dimension fill:#d81b60\n    style acting_dimension fill:#d81b60\n    style period_dimension fill:#d81b60\n    style aggregation fill:#c2185b\n    style raw_total fill:#ad1457\n    style adjustment fill:#ad1457\n    style final_score fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style recommendation fill:#a5d6a7,stroke:#388e3c,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["逃出绝命镇", "我们", "万能钥匙", "小岛惊魂", "第六感"],
+        "preferences": ["心理恐怖", "社会隐喻", "反转结局"],
+        "pref_weight_info": "心理恐怖:0.9, 社会隐喻:0.8, 反转结局:0.7",
+        "movie_info": {
+          "title": "遗传厄运",
+          "director": "阿里·艾斯特",
+          "genres": ["恐怖", "悬疑", "惊悚"],
+          "overview": "格雷厄姆家族的祖母去世后，家中开始发生一系列诡异事件，家族成员逐渐发现他们被一个可怕的命运所诅咒。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph TD\n    A[🎯 开始预测] --> B[📊 数据预处理]\n    A --> C[👤 用户分析]\n    \n    B --> D[🎬 电影特征提取]\n    C --> E[❤️ 偏好建模]\n    \n    D --> F[🔍 特征工程]\n    E --> F\n    \n    F --> G[⚖️ 匹配度计算]\n    \n    G --> H[1. 类型匹配: 87%]\n    G --> I[2. 导演匹配: 78%]\n    G --> J[3. 演员匹配: 82%]\n    G --> K[4. 风格匹配: 85%]\n    \n    H --> L[📈 得分计算]\n    I --> L\n    J --> L\n    K --> L\n    \n    L --> M[基础评分: 3.9]\n    M --> N[+ 调整因子: 0.6]\n    N --> O[最终评分: 4.5/5.0]\n    O --> P[💎 推荐指数: ★★★★☆]\n    P --> Q[🔥 强烈推荐《遗传厄运》]\n    \n    style A fill:#fff3e0,stroke:#e65100,stroke-width:2px\n    style B fill:#ffe0b2\n    style C fill:#ffe0b2\n    style D fill:#ffcc80\n    style E fill:#ffcc80\n    style F fill:#ffb74d\n    style G fill:#ffa726\n    style H fill:#ff9800\n    style I fill:#ff9800\n    style J fill:#ff9800\n    style K fill:#ff9800\n    style L fill:#fb8c00\n    style M fill:#f57c00\n    style N fill:#ef6c00\n    style O fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style P fill:#e8f5e8\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["摔跤吧！爸爸", "三傻大闹宝莱坞", "神秘巨星", "巴霍巴利王", "小萝莉的猴神大叔"],
+        "preferences": ["印度电影", "歌舞", "社会问题"],
+        "pref_weight_info": "印度电影:0.9, 歌舞:0.8, 社会问题:0.7",
+        "movie_info": {
+          "title": "厕所英雄",
+          "director": "什里·纳拉扬·辛格",
+          "genres": ["剧情", "喜剧", "爱情"],
+          "overview": "一名受过教育的女子嫁给乡村男子后，发现村里没有厕所，她为争取修建厕所的权利而与传统观念作斗争。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "graph LR\n    Start(开始) --> Input\n    Input[输入数据] --> MovieParse\n    Input --> UserParse\n    \n    MovieParse[电影解析] --> Features[特征提取]\n    UserParse[用户解析] --> Prefs[偏好分析]\n    \n    Features --> Matching[匹配引擎]\n    Prefs --> Matching\n    \n    Matching --> Compare{比较分析}\n    \n    Compare --> |类型相似度| Genre[85%匹配]\n    Compare --> |导演风格| Director[70%匹配]\n    Compare --> |社会主题| Theme[90%匹配]\n    Compare --> |文化背景| Culture[80%匹配]\n    \n    Genre --> Calculation[评分计算]\n    Director --> Calculation\n    Theme --> Calculation\n    Culture --> Calculation\n    \n    Calculation --> Base[基础分: 3.8]\n    Base --> Adjust[个性化调整]\n    Adjust --> Final[最终分: 4.4]\n    Final --> Recommend[👍 推荐《厕所英雄》]\n    \n    style Start fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px\n    style Input fill:#c8e6c9\n    style MovieParse fill:#a5d6a7\n    style UserParse fill:#a5d6a7\n    style Features fill:#81c784\n    style Prefs fill:#81c784\n    style Matching fill:#66bb6a\n    style Compare fill:#4caf50\n    style Genre fill:#ffcc80\n    style Director fill:#ffcc80\n    style Theme fill:#ffcc80\n    style Culture fill:#ffcc80\n    style Calculation fill:#43a047\n    style Base fill:#388e3c\n    style Adjust fill:#2e7d32\n    style Final fill:#1b5e20,stroke:#4caf50,stroke-width:2px\n    style Recommend fill:#a5d6a7,stroke:#388e3c,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["爱在黎明破晓前", "爱在日落黄昏时", "爱在午夜降临前", "一天", "时空恋旅人"],
+        "preferences": ["爱情", "对话驱动", "时间跨度"],
+        "pref_weight_info": "爱情:0.9, 对话驱动:0.8, 时间跨度:0.7",
+        "movie_info": {
+          "title": "蓝色情人节",
+          "director": "德里克·斯安弗朗斯",
+          "genres": ["剧情", "爱情"],
+          "overview": "通过交叉剪辑的方式，展现了一对夫妻从相识相恋到婚姻出现危机的全过程，探讨了爱情的真实面貌。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "graph TD\n    A[开始评分预测] --> B[数据输入层]\n    B --> C[特征提取层]\n    B --> D[用户画像层]\n    C --> E[特征向量化]\n    D --> F[偏好向量化]\n    E --> G[相似度计算层]\n    F --> G\n    G --> H[多维匹配分析]\n    H --> I[类型维度: 0.82]\n    H --> J[导演维度: 0.68]\n    H --> K[叙事维度: 0.85]\n    H --> L[情感维度: 0.79]\n    I --> M[加权融合层]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[原始评分: 3.7]\n    N --> O[校正系数: +0.6]\n    O --> P[预测评分: 4.3/5.0]\n    P --> Q[💕 推荐《蓝色情人节》]\n    \n    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#90caf9\n    style D fill:#90caf9\n    style E fill:#64b5f6\n    style F fill:#64b5f6\n    style G fill:#42a5f5\n    style H fill:#2196f3\n    style I fill:#ffb74d\n    style J fill:#ffb74d\n    style K fill:#ffb74d\n    style L fill:#ffb74d\n    style M fill:#1e88e5\n    style N fill:#1976d2\n    style O fill:#1565c0\n    style P fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:3px"
+    },
+    {
+      "input": {
+        "user_sequence": ["肖申克的救赎", "阿甘正传", "当幸福来敲门", "海上钢琴师", "美丽人生"],
+        "preferences": ["励志", "剧情", "人生哲理"],
+        "pref_weight_info": "励志:0.95, 剧情:0.8, 人生哲理:0.9",
+        "movie_info": {
+          "title": "绿皮书",
+          "director": "彼得·法雷里",
+          "genres": ["剧情", "喜剧", "传记"],
+          "overview": "一名意大利裔保镖被聘用为世界上优秀的爵士钢琴家开车，钢琴家将从纽约开始举办巡回演奏，俩人之间一段跨越种族、阶级的友谊故事。",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    A[开始预测评分计算] --> B[提取电影特征]\n    A --> C[获取用户偏好]\n    B --> D[特征分析]\n    C --> D\n    D --> E[类型匹配计算]\n    D --> F[导演匹配计算] \n    D --> G[演员匹配计算]\n    D --> H[年代匹配计算]\n    E --> I[类型得分: 2.9/3.0]\n    F --> J[导演得分: 0.6/0.8]\n    G --> K[演员得分: 0.9/1.0]\n    H --> L[年代得分: 0.2/0.2]\n    I --> M[得分汇总]\n    J --> M\n    K --> M\n    L --> M\n    M --> N[计算原始总分: 4.6]\n    N --> O[范围调整: 1.0-5.0]\n    O --> P[最终预测评分: 4.7/5.0]\n    P --> Q[推荐《绿皮书》]\n    \n    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style B fill:#bbdefb\n    style C fill:#bbdefb\n    style D fill:#90caf9\n    style E fill:#ef9a9a\n    style F fill:#90caf9\n    style G fill:#a5d6a7\n    style H fill:#fff59d\n    style I fill:#ef9a9a\n    style J fill:#90caf9\n    style K fill:#a5d6a7\n    style L fill:#fff59d\n    style M fill:#ffcc80\n    style N fill:#ffcc80\n    style O fill:#ffcc80\n    style P fill:#fff9c4\n    style Q fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["复仇者联盟", "钢铁侠", "美国队长", "蜘蛛侠：英雄归来", "黑豹"],
+        "preferences": ["超级英雄", "动作", "漫威"],
+        "pref_weight_info": "超级英雄:0.9, 动作:0.85, 漫威:0.95",
+        "movie_info": {
+          "title": "银河护卫队",
+          "director": "詹姆斯·古恩",
+          "genres": ["动作", "冒险", "科幻", "喜剧"],
+          "overview": "一群来自不同星系的超级英雄组成团队，共同保护银河系免受邪恶势力的威胁。",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph LR\n    Start[开始评分预测] --> Input[输入处理]\n    Input --> Extract[特征提取]\n    Input --> Pref[偏好分析]\n    Extract --> Match[匹配计算]\n    Pref --> Match\n    Match --> Genre[类型匹配: 2.7/3.0]\n    Match --> Director[导演匹配: 0.7/0.8]\n    Match --> Actor[演员匹配: 0.8/1.0]\n    Match --> Year[年代匹配: 0.2/0.2]\n    Genre --> Sum[得分汇总]\n    Director --> Sum\n    Actor --> Sum\n    Year --> Sum\n    Sum --> Total[原始总分: 4.4]\n    Total --> Adjust[范围调整]\n    Adjust --> Final[最终评分: 4.6/5.0]\n    Final --> Rec[推荐《银河护卫队》]\n    \n    style Start fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style Input fill:#bbdefb\n    style Extract fill:#90caf9\n    style Pref fill:#90caf9\n    style Match fill:#ffcc80\n    style Genre fill:#ef9a9a\n    style Director fill:#90caf9\n    style Actor fill:#a5d6a7\n    style Year fill:#fff59d\n    style Sum fill:#ffcc80\n    style Total fill:#ffcc80\n    style Adjust fill:#ffcc80\n    style Final fill:#fff9c4\n    style Rec fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["泰坦尼克号", "乱世佳人", "罗马假日", "人鬼情未了", "卡萨布兰卡"],
+        "preferences": ["爱情", "经典", "浪漫"],
+        "pref_weight_info": "爱情:0.9, 经典:0.85, 浪漫:0.8",
+        "movie_info": {
+          "title": "爱在黎明破晓前",
+          "director": "理查德·林克莱特",
+          "genres": ["剧情", "爱情"],
+          "overview": "美国青年杰西在火车上偶遇法国女生塞琳娜，两人在维也纳下车，共同度过一个浪漫的夜晚，在日出前决定是否继续这段感情。",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "graph BT\n    Recommendation[推荐结果] --> FinalScore\n    FinalScore[最终评分: 4.5/5.0] --> Adjustment\n    Adjustment[评分调整] --> RawScore\n    RawScore[原始总分: 4.2] --> Summary\n    Summary[得分汇总] --> GenreScore\n    Summary --> DirectorScore\n    Summary --> ActorScore\n    Summary --> YearScore\n    GenreScore[类型得分: 2.8/3.0] --> Matching\n    DirectorScore[导演得分: 0.5/0.8] --> Matching\n    ActorScore[演员得分: 0.7/1.0] --> Matching\n    YearScore[年代得分: 0.2/0.2] --> Matching\n    Matching[匹配计算] --> Analysis\n    Analysis[特征分析] --> DataInput\n    DataInput[数据输入] --> MovieData[电影数据]\n    DataInput --> UserProfile[用户画像]\n    MovieData[《爱在黎明破晓前》] --> Start\n    UserProfile[用户偏好分析] --> Start\n    Start[算法开始] --> Recommendation\n    \n    style Start fill:#fce4ec,stroke:#c2185b,stroke-width:2px\n    style MovieData fill:#f8bbd9\n    style UserProfile fill:#f8bbd9\n    style DataInput fill:#f48fb1\n    style Analysis fill:#f06292\n    style Matching fill:#ec407a\n    style GenreScore fill:#e91e63\n    style DirectorScore fill:#e91e63\n    style ActorScore fill:#e91e63\n    style YearScore fill:#e91e63\n    style Summary fill:#d81b60\n    style RawScore fill:#c2185b\n    style Adjustment fill:#ad1457\n    style FinalScore fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style Recommendation fill:#f8bbd9,stroke:#c2185b,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["盗梦空间", "源代码", "前目的地", "恐怖游轮", "蝴蝶效应"],
+        "preferences": ["烧脑", "科幻", "时间循环"],
+        "pref_weight_info": "烧脑:0.9, 科幻:0.8, 时间循环:0.85",
+        "movie_info": {
+          "title": "明日边缘",
+          "director": "道格·里曼",
+          "genres": ["动作", "科幻"],
+          "overview": "一名军事公关专员被迫加入一场对抗外星人的战争，却意外获得了重置时间的能力，在不断重复的生死循环中寻找胜利的方法。",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "graph TD\n    A[🎯 开始预测] --> B[📊 数据预处理]\n    A --> C[👤 用户分析]\n    B --> D[🎬 电影特征提取]\n    C --> E[❤️ 偏好建模]\n    D --> F[🔍 特征工程]\n    E --> F\n    F --> G[⚖️ 匹配度计算]\n    G --> H[1. 类型匹配: 86%]\n    G --> I[2. 导演匹配: 78%]\n    G --> J[3. 演员匹配: 82%]\n    G --> K[4. 风格匹配: 85%]\n    H --> L[📈 得分计算]\n    I --> L\n    J --> L\n    K --> L\n    L --> M[基础评分: 4.0]\n    M --> N[+ 调整因子: 0.6]\n    N --> O[最终评分: 4.6/5.0]\n    O --> P[💎 推荐指数: ★★★★☆]\n    P --> Q[🚀 推荐《明日边缘》]\n    \n    style A fill:#fff3e0,stroke:#e65100,stroke-width:2px\n    style B fill:#ffe0b2\n    style C fill:#ffe0b2\n    style D fill:#ffcc80\n    style E fill:#ffcc80\n    style F fill:#ffb74d\n    style G fill:#ffa726\n    style H fill:#ff9800\n    style I fill:#ff9800\n    style J fill:#ff9800\n    style K fill:#ff9800\n    style L fill:#fb8c00\n    style M fill:#f57c00\n    style N fill:#ef6c00\n    style O fill:#4caf50,stroke:#1b5e20,stroke-width:2px\n    style P fill:#e8f5e8\n    style Q fill:#ffcc80,stroke:#ff9800,stroke-width:2px"
+    },
+    {
+      "input": {
+        "user_sequence": ["教父", "好家伙", "美国往事", "疤面煞星", "盗火线"],
+        "preferences": ["黑帮", "犯罪", "经典"],
+        "pref_weight_info": "黑帮:0.9, 犯罪:0.85, 经典:0.8",
+        "movie_info": {
+          "title": "爱尔兰人",
+          "director": "马丁·斯科塞斯",
+          "genres": ["剧情", "犯罪", "传记"],
+          "overview": "通过二战老兵弗兰克的视角，讲述了战后美国有组织犯罪的故事，跨越数十年，记录了黑帮的兴衰历程。",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "graph TD\n    Start[开始预测评分计算] --> Extract[特征提取模块]\n    Start --> Pref[用户偏好分析]\n    Extract --> Analysis[多维度特征分析]\n    Pref --> Analysis\n    Analysis --> GenreMatch[类型匹配计算]\n    Analysis --> DirectorMatch[导演匹配计算]\n    Analysis --> ActorMatch[演员匹配计算]\n    Analysis --> YearMatch[年代匹配计算]\n    GenreMatch --> GenreScore[类型匹配: 2.9/3.0]\n    DirectorMatch --> DirectorScore[导演匹配: 0.8/0.8]\n    ActorMatch --> ActorScore[演员匹配: 0.9/1.0]\n    YearMatch --> YearScore[年代匹配: 0.2/0.2]\n    GenreScore --> Summary[得分汇总]\n    DirectorScore --> Summary\n    ActorScore --> Summary\n    YearScore --> Summary\n    Summary --> Total[原始总分: 4.8]\n    Total --> Adjust[范围调整]\n    Adjust --> Final[最终评分: 4.7/5.0]\n    Final --> Recommend[推荐《爱尔兰人》]\n    \n    style Start fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px\n    style Extract fill:#bbdefb\n    style Pref fill:#bbdefb\n    style Analysis fill:#90caf9\n    style GenreMatch fill:#ef9a9a\n    style DirectorMatch fill:#90caf9\n    style ActorMatch fill:#a5d6a7\n    style YearMatch fill:#fff59d\n    style GenreScore fill:#ef9a9a\n    style DirectorScore fill:#90caf9\n    style ActorScore fill:#a5d6a7\n    style YearScore fill:#fff59d\n    style Summary fill:#ffcc80\n    style Total fill:#ffcc80\n    style Adjust fill:#ffcc80\n    style Final fill:#fff9c4\n    style Recommend fill:#c8e6c9,stroke:#4caf50,stroke-width:2px"
+    }
+  ]
+}

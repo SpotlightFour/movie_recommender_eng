@@ -1,0 +1,968 @@
+{
+  "training_data": [
+    {
+      "input": {
+        "user_sequence": ["Inception", "Interstellar", "The Dark Knight"],
+        "preferences": ["Sci-Fi", "Mystery", "Action"],
+        "movie_info": {
+          "title": "Tenet",
+          "director": "Christopher Nolan",
+          "genres": ["Sci-Fi", "Action", "Thriller"],
+          "overview": "A secret agent embarks on a dangerous mission using time inversion technology to prevent World War III...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "We noticed your fondness for Christopher Nolan's works. Both Inception and Interstellar reflect your preference for complex narratives. Tenet continues the director's iconic exploration of time concepts, promising to deliver the familiar intellectual challenge you enjoy!"
+    },
+    {
+      "input": {
+        "user_sequence": ["Titanic", "Forrest Gump", "The Shawshank Redemption"],
+        "preferences": ["Drama", "Romance", "Classic"],
+        "movie_info": {
+          "title": "Life is Beautiful",
+          "director": "Roberto Benigni",
+          "genres": ["Drama", "Romance", "War"],
+          "overview": "During World War II, a Jewish father uses his imagination to protect his son from the horrors of a concentration camp...",
+          "vote_average": 4.8
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Judging from your love for classic dramas, Life is Beautiful—a touching story blending paternal love and hope—will be perfect for you. It showcases the brilliance of human nature against the backdrop of heavy history, perfectly matching your preference for in-depth narrative styles."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Avengers", "Spider-Man", "Iron Man"],
+        "preferences": ["Superhero", "Action", "Marvel"],
+        "movie_info": {
+          "title": "Guardians of the Galaxy",
+          "director": "James Gunn",
+          "genres": ["Action", "Adventure", "Sci-Fi", "Comedy"],
+          "overview": "A group of intergalactic criminals forms a team to protect the Milky Way from a powerful threat...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Based on your love for the Marvel Universe, we've selected Guardians of the Galaxy for you. While maintaining exciting action sequences, this film adds unique humorous elements, bringing freshness to the superhero genre you're familiar with!"
+    },
+    {
+      "input": {
+        "user_sequence": ["Zootopia", "Coco", "Frozen"],
+        "preferences": ["Animation", "Family", "Music"],
+        "movie_info": {
+          "title": "Soul",
+          "director": "Pete Docter",
+          "genres": ["Animation", "Comedy", "Music", "Fantasy"],
+          "overview": "A middle school music teacher accidentally enters a magical realm to explore the meaning of life...",
+          "vote_average": 4.7
+        },
+        "predicted_rating": 4.8
+      },
+      "output": "From the animated films you enjoy, it's clear you appreciate in-depth family-friendly works. Soul not only boasts stunning visuals but also explores profound themes about the meaning of life, with musical elements that align perfectly with your preferences."
+    },
+    {
+      "input": {
+        "user_sequence": ["Shutter Island", "Gone Girl", "Se7en"],
+        "preferences": ["Psychological Thriller", "Crime", "Mystery"],
+        "movie_info": {
+          "title": "The Invisible Guest",
+          "director": "Oriol Paulo",
+          "genres": ["Mystery", "Thriller", "Crime"],
+          "overview": "A successful businessman becomes entangled in a murder case and must prove his innocence within a limited time...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Your preference for psychological thrillers led us to recommend The Invisible Guest. Its multi-layered twist narrative structure is reminiscent of Gone Girl, which you enjoyed, with every detail worth savoring."
+    },
+    {
+      "input": {
+        "user_sequence": ["La La Land", "Bohemian Rhapsody", "Mamma Mia!"],
+        "preferences": ["Music", "Musical", "Romance"],
+        "movie_info": {
+          "title": "The Greatest Showman",
+          "director": "Michael Gracey",
+          "genres": ["Drama", "Musical", "Biography"],
+          "overview": "The legendary story of how P.T. Barnum went from rags to riches to become a circus tycoon...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "Based on your love for musicals, The Greatest Showman's magnificent song-and-dance sequences and inspirational story are sure to captivate you. The high-quality original music in the film perfectly meets your expectations for this genre."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Fast and the Furious", "Mission: Impossible", "James Bond"],
+        "preferences": ["Action", "Adventure", "Spy"],
+        "movie_info": {
+          "title": "Ford v Ferrari",
+          "director": "James Mangold",
+          "genres": ["Drama", "Action", "Biography", "Sports"],
+          "overview": "The story of Ford Motor Company's attempt to challenge Ferrari at the 24 Hours of Le Mans race...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Starting from your love for action blockbusters, Ford v Ferrari offers intense racing sequences combined with a true historical backdrop, providing you with a more in-depth experience than traditional action films."
+    },
+    {
+      "input": {
+        "user_sequence": ["Harry Potter", "The Lord of the Rings", "The Chronicles of Narnia"],
+        "preferences": ["Fantasy", "Adventure", "Magic"],
+        "movie_info": {
+          "title": "Fantastic Beasts and Where to Find Them",
+          "director": "David Yates",
+          "genres": ["Fantasy", "Adventure", "Family"],
+          "overview": "The adventure of magizoologist Newt Scamander in New York City...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "As an extension of the Harry Potter series, Fantastic Beasts and Where to Find Them will transport you back to the familiar wizarding world. Your preference for fantasy genres assures us this film will continue your viewing pleasure."
+    },
+    {
+      "input": {
+        "user_sequence": ["Parasite", "Joker", "Roma"],
+        "preferences": ["Social Issues", "Drama", "International Film"],
+        "movie_info": {
+          "title": "Minari",
+          "director": "Lee Isaac Chung",
+          "genres": ["Drama", "Family"],
+          "overview": "The story of a Korean-American family pursuing the American Dream in rural Arkansas...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Judging from your viewing preference for social issues, Minari—a film exploring the identity of immigrant families—will be ideal for you. It depicts cultural conflicts and family bonds with delicate brushstrokes, balancing depth and warmth."
+    },
+    {
+      "input": {
+        "user_sequence": ["Your Name", "Weathering with You", "Spirited Away"],
+        "preferences": ["Animation", "Romance", "Fantasy"],
+        "movie_info": {
+          "title": "Suzume",
+          "director": "Makoto Shinkai",
+          "genres": ["Animation", "Fantasy", "Adventure", "Romance"],
+          "overview": "The journey of a teenage girl Suzume and a 'closer' Sota as they close doors to disasters...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "As a fan of Makoto Shinkai's works, you'll surely love Suzume. It continues the director's iconic beautiful art style and youthful romance themes, with fantasy adventure elements that perfectly match your preferences."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Godfather", "Goodfellas", "Once Upon a Time in America"],
+        "preferences": ["Gangster", "Crime", "Classic"],
+        "movie_info": {
+          "title": "The Irishman",
+          "director": "Martin Scorsese",
+          "genres": ["Crime", "Drama", "Biography"],
+          "overview": "Through the memories of an aging gangster hitman, the story of organized crime in America is told...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Based on your deep interest in classic gangster films, The Irishman—a masterpiece of the genre—should not be missed. Martin Scorsese's masterful storytelling combined with your preferred crime genre is sure to deliver a satisfying viewing experience."
+    },
+    {
+      "input": {
+        "user_sequence": ["Interstellar", "Gravity", "The Martian"],
+        "preferences": ["Sci-Fi", "Space", "Hard Sci-Fi"],
+        "movie_info": {
+          "title": "Arrival",
+          "director": "Denis Villeneuve",
+          "genres": ["Sci-Fi", "Drama", "Mystery"],
+          "overview": "A linguist is recruited to communicate with extraterrestrials, only to discover a fundamental change in her perception of time...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Starting from your preference for hard sci-fi, Arrival offers a unique linguistic perspective on alien contact. This film matches Interstellar in scientific rigor while introducing new philosophical dimensions for reflection."
+    },
+    {
+      "input": {
+        "user_sequence": ["Flipped", "The Notebook", "One Day"],
+        "preferences": ["Romance", "Romantic", "Youth"],
+        "movie_info": {
+          "title": "Five Feet Apart",
+          "director": "Justin Baldoni",
+          "genres": ["Drama", "Romance"],
+          "overview": "Two teenagers with cystic fibrosis meet and fall in love in a hospital, but must maintain a safe distance...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Your preference for sincere love stories led us to recommend Five Feet Apart. Beyond romance, this film incorporates unique life themes, with emotional depth that transcends typical romantic films—sure to touch your heart."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Silence of the Lambs", "Hannibal", "Red Dragon"],
+        "preferences": ["Thriller", "Crime", "Psychological"],
+        "movie_info": {
+          "title": "Zodiac",
+          "director": "David Fincher",
+          "genres": ["Crime", "Drama", "Thriller", "Mystery"],
+          "overview": "The true story of the hunt for the Zodiac Killer in the San Francisco Bay Area...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "As an enthusiast of psychological thrillers, David Fincher's Zodiac will resonate deeply with you. The film's meticulous portrayal of a real crime and psychological analysis aligns perfectly with your preference for in-depth crime narratives."
+    },
+    {
+      "input": {
+        "user_sequence": ["Black Swan", "Birdman", "Whiplash"],
+        "preferences": ["Psychological", "Art", "Music"],
+        "movie_info": {
+          "title": "The Whale",
+          "director": "Darren Aronofsky",
+          "genres": ["Drama", "Psychological"],
+          "overview": "The story of a reclusive English teacher attempting to rebuild his relationship with his daughter...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Judging from your preference for psychological depth and artistic expression, The Whale—a film exploring human nature and redemption—will be perfect for you. Its delicate portrayal of character inner worlds is reminiscent of Black Swan, which you enjoyed."
+    },
+    {
+      "input": {
+        "user_sequence": ["Ready Player One", "Free Guy", "Blade Runner 2049"],
+        "preferences": ["Sci-Fi", "Virtual Reality", "Future World"],
+        "movie_info": {
+          "title": "Upgrade",
+          "director": "Leigh Whannell",
+          "genres": ["Sci-Fi", "Action", "Thriller"],
+          "overview": "A man paralyzed in a robbery regains mobility through an experimental chip...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Based on your interest in sci-fi genres, particularly virtual reality themes, Upgrade—a film exploring human-machine integration—will captivate you. Beyond action sequences, it offers reflections on technological ethics, echoing the depth of Blade Runner 2049."
+    },
+    {
+      "input": {
+        "user_sequence": ["Heidi", "Little Forest", "A Summer in Provence"],
+        "preferences": ["Healing", "Nature", "Warmth"],
+        "movie_info": {
+          "title": "Don't Tell Me the Boy Was Mad",
+          "director": "Nicolas Vanier",
+          "genres": ["Adventure", "Family", "Healing"],
+          "overview": "The touching story of a teenager leading wild geese on their migration by flying a ultralight aircraft...",
+          "vote_average": 4.6
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "Your love for healing films led us to recommend Don't Tell Me the Boy Was Mad. While showcasing magnificent natural scenery, this film conveys profound emotions between humans and animals, with warmth comparable to Heidi, which you enjoyed."
+    },
+    {
+      "input": {
+        "user_sequence": ["Now You See Me", "Ocean's Eleven", "The Italian Job"],
+        "preferences": ["Crime", "High IQ", "Teamwork"],
+        "movie_info": {
+          "title": "Ocean's Eleven",
+          "director": "Steven Soderbergh",
+          "genres": ["Crime", "Thriller", "Action"],
+          "overview": "The story of a group of professional thieves planning and executing a perfect bank heist...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "As an enthusiast of high-IQ crime films, Ocean's Eleven's intricate plan design and team collaboration will impress you. The film's rhythm and suspense are as thrilling as Now You See Me."
+    },
+    {
+      "input": {
+        "user_sequence": ["Three Billboards Outside Ebbing, Missouri", "Manchester by the Sea", "Room"],
+        "preferences": ["Drama", "Human Nature", "Social Reality"],
+        "movie_info": {
+          "title": "Never Look Away",
+          "director": "Florian Henckel von Donnersmarck",
+          "genres": ["Drama", "History"],
+          "overview": "The story of an artist pursuing artistic freedom in East Germany after World War II...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Judging from your focus on in-depth human nature in films, Never Look Away—a film exploring the relationship between art, politics, individuals, and history—will suit your taste. Its depth of humanistic care is comparable to Three Billboards Outside Ebbing, Missouri."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Hunger Games", "The Maze Runner", "Divergent"],
+        "preferences": ["Dystopian", "Youth", "Adventure"],
+        "movie_info": {
+          "title": "Chaos Walking",
+          "director": "Doug Liman",
+          "genres": ["Sci-Fi", "Adventure", "Dystopian"],
+          "overview": "In a world where all men's thoughts are audible, a teenager discovers a shocking truth...",
+          "vote_average": 3.9
+        },
+        "predicted_rating": 4.2
+      },
+      "output": "Based on your love for dystopian youth themes, Chaos Walking's innovative world-building will bring you freshness. The film's exploration of power and truth continues the core themes of your favorite works."
+    },
+    {
+      "input": {
+        "user_sequence": ["Green Book", "Hidden Figures", "12 Years a Slave"],
+        "preferences": ["Race", "History", "Social Equality"],
+        "movie_info": {
+          "title": "The Banker",
+          "director": "George Nolfi",
+          "genres": ["Drama", "History", "Biography"],
+          "overview": "The story of African-American entrepreneurs operating real estate through white proxies during the segregation era...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Your attention to social equality themes led us to recommend The Banker. Based on a true story, this film showcases business acumen during the segregation era, with historical depth that is consistent with Green Book."
+    },
+    {
+      "input": {
+        "user_sequence": ["Your Name", "Weathering with You", "Spirited Away"],
+        "preferences": ["Animation", "Fantasy", "Romance"],
+        "movie_info": {
+          "title": "Wolf Children",
+          "director": "Mamoru Hosoda",
+          "genres": ["Animation", "Family", "Fantasy"],
+          "overview": "The heartwarming story of a young mother raising her children with werewolf ancestry alone...",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "As an enthusiast of high-quality animated films, Mamoru Hosoda's Wolf Children will deeply move you. It explores family and growth within a fantasy setting, with emotional delicacy comparable to Makoto Shinkai's works."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Bourne Series", "James Bond", "Mission: Impossible"],
+        "preferences": ["Spy", "Action", "Mystery"],
+        "movie_info": {
+          "title": "Atomic Blonde",
+          "director": "David Leitch",
+          "genres": ["Action", "Thriller", "Spy"],
+          "overview": "The story of a female spy on a dangerous mission in Berlin during the final days of the Cold War...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Starting from your preference for spy action films, Atomic Blonde's intense fight sequences and Cold War backdrop will appeal to you. The film's female protagonist perspective brings freshness to the spy genre you're familiar with."
+    },
+    {
+      "input": {
+        "user_sequence": ["It", "The Conjuring", "Insidious"],
+        "preferences": ["Horror", "Supernatural", "Psychological Horror"],
+        "movie_info": {
+          "title": "Hereditary",
+          "director": "Ari Aster",
+          "genres": ["Horror", "Thriller"],
+          "overview": "Family secrets gradually surface, triggering a series of terrifying events...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "As a horror film enthusiast, Hereditary's gradual psychological horror will resonate deeply with you. Beyond jump scares, the film focuses on atmosphere building, aligning perfectly with your preference for in-depth horror styles."
+    },
+    {
+      "input": {
+        "user_sequence": ["Dangal", "Secret Superstar", "Hindi Medium"],
+        "preferences": ["Indian Film", "Social", "Family"],
+        "movie_info": {
+          "title": "Toilet: Ek Prem Katha",
+          "director": "Shree Narayan Singh",
+          "genres": ["Comedy", "Drama", "Social"],
+          "overview": "The story of a husband building a toilet at home for his wife, challenging traditional customs...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Judging from your love for Indian social dramas, Toilet: Ek Prem Katha—a film exploring gender equality and traditional transformation—will be perfect for you. Its social significance beyond entertainment is consistent with Dangal."
+    },
+    {
+      "input": {
+        "user_sequence": ["Avatar", "Gravity", "The Martian"],
+        "preferences": ["Sci-Fi", "Space", "Visual Spectacle"],
+        "movie_info": {
+          "title": "Ad Astra",
+          "director": "James Gray",
+          "genres": ["Sci-Fi", "Adventure", "Drama"],
+          "overview": "An astronaut travels across the solar system to find his missing father...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Based on your love for space sci-fi, Ad Astra emphasizes psychological portrayal beyond grand visuals, bringing new depth to the genre you're familiar with. The film's lonely atmosphere is reminiscent of Gravity."
+    },
+    {
+      "input": {
+        "user_sequence": ["Lady Bird", "Eighth Grade", "The Edge of Seventeen"],
+        "preferences": ["Youth", "Coming-of-Age", "Comedy"],
+        "movie_info": {
+          "title": "The Half of It",
+          "director": "Alice Wu",
+          "genres": ["Comedy", "Romance", "Youth"],
+          "overview": "The emotional story of an Asian-American high school student helping a classmate pursue a girl, only to find herself developing feelings...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Your preference for coming-of-age themes led us to recommend The Half of It. This film explores identity and first love with light humor and sincerity, comparable to Lady Bird—sure to resonate with you."
+    },
+    {
+      "input": {
+        "user_sequence": ["Searching", "Unfriended", "The Search"],
+        "preferences": ["Mystery", "Technology", "Innovative Narrative"],
+        "movie_info": {
+          "title": "Profile",
+          "director": "Timur Bekmambetov",
+          "genres": ["Thriller", "Crime", "Mystery"],
+          "overview": "A female journalist embarks on a dangerous mission to track terrorists through online chat rooms...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Starting from your interest in mystery films with innovative narrative forms, Profile's full computer screen presentation will appeal to you. While maintaining tension, it reflects deeply on privacy issues in the digital age."
+    },
+    {
+      "input": {
+        "user_sequence": ["Call Me by Your Name", "Moonlight", "Carol"],
+        "preferences": ["Romance", "LGBTQ", "Art House"],
+        "movie_info": {
+          "title": "God's Own Country",
+          "director": "Francis Lee",
+          "genres": ["Drama", "Romance", "LGBTQ+"],
+          "overview": "The love story between a Yorkshire shepherd and an immigrant worker...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "As an enthusiast of art house romance films, God's Own Country's delicate emotional portrayal and English countryside scenery will captivate you. Its exploration of loneliness and connection is as touching as Call Me by Your Name."
+    },
+    {
+      "input": {
+        "user_sequence": ["Get Out", "Us", "Candyman"],
+        "preferences": ["Horror", "Social Issues", "Race"],
+        "movie_info": {
+          "title": "Nope",
+          "director": "Jordan Peele",
+          "genres": ["Horror", "Sci-Fi", "Mystery"],
+          "overview": "A brother and sister return to their childhood farm and discover terrifying supernatural phenomena...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Your preference for horror films integrating social issues led us to recommend Nope. Jordan Peele's signature combination of social metaphors and horror elements continues the successful formula of Get Out."
+    },
+    {
+      "input": {
+        "user_sequence": ["Bohemian Rhapsody", "Rocketman", "A Star Is Born"],
+        "preferences": ["Music", "Biography", "Musical"],
+        "movie_info": {
+          "title": "Respect",
+          "director": "Liesl Tommy",
+          "genres": ["Biography", "Music", "Drama"],
+          "overview": "The legendary life story of soul music queen Aretha Franklin...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Based on your love for music biopics, Respect—a film showcasing Aretha Franklin's life—will be perfect for you. The interpretation of classic soul music complements the character's growth story, with musical appeal comparable to Bohemian Rhapsody."
+    },
+    {
+      "input": {
+        "user_sequence": ["Little Women", "Pride & Prejudice", "Emma"],
+        "preferences": ["Classic", "Romance", "Literary Adaptation"],
+        "movie_info": {
+          "title": "Persuasion",
+          "director": "Carrie Cracknell",
+          "genres": ["Drama", "Romance", "Classic"],
+          "overview": "Adapted from Jane Austen's classic novel, the story of two lovers who reunite after missing their chance at true love...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Judging from your love for classic romantic literature, Jane Austen's Persuasion will resonate deeply with you. This film explores true love and second chances within an elegant classic atmosphere, with an artistic temperament consistent with Little Women."
+    },
+    {
+      "input": {
+        "user_sequence": ["John Wick", "The Equalizer", "Taken"],
+        "preferences": ["Action", "Revenge", "Action Hero"],
+        "movie_info": {
+          "title": "Nobody",
+          "director": "Ilya Naishuller",
+          "genres": ["Action", "Thriller", "Crime"],
+          "overview": "The story of an ordinary father who reveals surprising combat skills to protect his family...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "As an enthusiast of action hero films, Nobody's sleek fight choreography and unexpected humor will appeal to you. Beyond action sequences, the film's character development adds new dimensions to the genre you're familiar with."
+    },
+    {
+      "input": {
+        "user_sequence": ["Parasite", "Burning", "The Handmaiden"],
+        "preferences": ["Korean Film", "Mystery", "Social Class"],
+        "movie_info": {
+          "title": "Aloners",
+          "director": "Hong Sung-eun",
+          "genres": ["Drama", "Mystery", "Social"],
+          "overview": "Loneliness and connection among people of different classes in modern cities...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Your preference for Korean social mystery films led us to recommend Aloners. Its profound portrayal of modern loneliness and exploration of class issues continues the successful path of Parasite."
+    },
+    {
+      "input": {
+        "user_sequence": ["Arrival", "Blade Runner 2049", "Dune"],
+        "preferences": ["Sci-Fi", "Philosophy", "Visual Art"],
+        "movie_info": {
+          "title": "Annihilation",
+          "director": "Alex Garland",
+          "genres": ["Sci-Fi", "Thriller", "Mystery"],
+          "overview": "A biologist enters a mysterious zone to find her missing husband and discovers mind-bending phenomena...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Starting from your preference for philosophical sci-fi, Annihilation offers profound reflections on identity and transformation beyond visual spectacles. The film's metaphorical layers are as worthy of repeated contemplation as Arrival."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Social Network", "Jobs", "The Imitation Game"],
+        "preferences": ["Biography", "Technology", "Genius"],
+        "movie_info": {
+          "title": "The Current War",
+          "director": "Alfonso Gomez-Rejon",
+          "genres": ["Drama", "History", "Biography"],
+          "overview": "The battle between Edison and Tesla over electrical current, a technological competition that changed the world...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Based on your interest in biopics about tech geniuses, The Current War showcases the technological competition that shaped history. Its portrayal of innovation is as engaging as The Social Network."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Croods", "How to Train Your Dragon", "Monsters University"],
+        "preferences": ["Animation", "Comedy", "Adventure"],
+        "movie_info": {
+          "title": "The Mitchells vs. The Machines",
+          "director": "Mike Rianda",
+          "genres": ["Animation", "Comedy", "Sci-Fi"],
+          "overview": "A family must save the world during a robot uprising...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Your love for humorous animations led us to recommend The Mitchells vs. The Machines. While maintaining family-friendly entertainment, this film cleverly satirizes the digital age, with comedy elements as excellent as The Croods."
+    },
+    {
+      "input": {
+        "user_sequence": ["Black Panther", "Moonlight", "Selma"],
+        "preferences": ["Race", "Social Justice", "Black Culture"],
+        "movie_info": {
+          "title": "Judas and the Black Messiah",
+          "director": "Shaka King",
+          "genres": ["Drama", "History", "Biography"],
+          "overview": "The story of Black Panther Party leader Fred Hampton, betrayed by an FBI informant...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Judging from your attention to social justice themes, Judas and the Black Messiah—based on a true historical event—will be perfect for you. Its profound portrayal of the civil rights movement continues the spiritual core of Selma."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Shape of Water", "Pan's Labyrinth", "Hellboy"],
+        "preferences": ["Fantasy", "Dark Fairy Tale", "Guillermo del Toro"],
+        "movie_info": {
+          "title": "Okja",
+          "director": "Bong Joon-ho",
+          "genres": ["Drama", "Sci-Fi", "Adventure"],
+          "overview": "The extraordinary friendship between a young girl and a giant genetically modified pig...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "As an enthusiast of dark fairy tales, Bong Joon-ho's Okja will appeal to you. It explores the relationship between humans and nature within a fantasy setting, with a unique perspective reminiscent of Guillermo del Toro's works."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Boy in the Striped Pajamas", "Schindler's List", "The Pianist"],
+        "preferences": ["World War II", "History", "Human Nature"],
+        "movie_info": {
+          "title": "Persian Lessons",
+          "director": "Vadim Perelman",
+          "genres": ["Drama", "War"],
+          "overview": "A Jewish prisoner pretends to be Persian to teach a Nazi officer fake Persian lessons in a survival story...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "Based on your deep interest in World War II historical films, Persian Lessons—a unique story about language and survival—will be perfect for you. Its portrayal of the brilliance of human nature amid heavy history is as touching as Schindler's List."
+    },
+    {
+      "input": {
+        "user_sequence": ["Source Code", "Edge of Tomorrow", "Triangle"],
+        "preferences": ["Time Loop", "Sci-Fi", "Mystery"],
+        "movie_info": {
+          "title": "Boss Level",
+          "director": "Joe Carnahan",
+          "genres": ["Action", "Sci-Fi", "Comedy"],
+          "overview": "A special forces soldier is trapped in a time loop, repeatedly reliving the same day to fight assassins...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Your preference for time loop themes led us to recommend Boss Level. This film plays with the loop concept within an action-comedy framework, with entertainment value comparable to Edge of Tomorrow and more humor."
+    },
+    {
+      "input": {
+        "user_sequence": ["American Beauty", "Revolutionary Road", "The Bridges of Madison County"],
+        "preferences": ["Family", "Marriage", "Midlife Crisis"],
+        "movie_info": {
+          "title": "Marriage Story",
+          "director": "Noah Baumbach",
+          "genres": ["Drama", "Romance"],
+          "overview": "The touching story of a couple re-evaluating their relationship during a divorce...",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Judging from your deep understanding of marriage and family themes, Marriage Story's delicate analysis of intimate relationships will suit your taste. Its emotional authenticity is as striking as American Beauty."
+    },
+    {
+      "input": {
+        "user_sequence": ["V for Vendetta", "1984", "Fahrenheit 451"],
+        "preferences": ["Dystopian", "Politics", "Freedom"],
+        "movie_info": {
+          "title": "The Platform",
+          "director": "Galder Gaztelu-Urrutia",
+          "genres": ["Sci-Fi", "Thriller", "Mystery"],
+          "overview": "A brutal social experiment where prisoners fight for food in a vertical prison...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "As a deep enthusiast of dystopian themes, The Platform's sharp critique of class and human nature will resonate deeply with you. The film's social metaphor layers are as thought-provoking as V for Vendetta."
+    },
+    {
+      "input": {
+        "user_sequence": ["Mulholland Drive", "Lost Highway", "Memento"],
+        "preferences": ["Psychological", "Surreal", "Mind-Bending"],
+        "movie_info": {
+          "title": "mother!",
+          "director": "Darren Aronofsky",
+          "genres": ["Drama", "Mystery", "Horror"],
+          "overview": "A couple's peaceful life is disrupted by uninvited guests, plunging them into a surreal nightmare...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Based on your unique taste for mind-bending psychological films, mother!—a surreal work full of metaphors—will be perfect for you. Its narrative adventurous spirit is consistent with Mulholland Drive."
+    },
+    {
+      "input": {
+        "user_sequence": ["Mad Max: Fury Road", "The Matrix", "Terminator 2"],
+        "preferences": ["Action", "Sci-Fi", "Post-Apocalyptic"],
+        "movie_info": {
+          "title": "The Book of Eli",
+          "director": "Albert Hughes",
+          "genres": ["Action", "Adventure", "Drama"],
+          "overview": "The adventure journey of a post-apocalyptic survivor protecting the last hope of humanity—a mysterious book...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "Starting from your passion for post-apocalyptic action films, The Book of Eli adds spiritual exploration depth beyond violent aesthetics, bringing new dimensions to the genre you're familiar with."
+    },
+    {
+      "input": {
+        "user_sequence": ["The King's Speech", "Darkest Hour", "Dunkirk"],
+        "preferences": ["History", "World War II", "Biography"],
+        "movie_info": {
+          "title": "1917",
+          "director": "Sam Mendes",
+          "genres": ["Drama", "War", "History"],
+          "overview": "The life-or-death mission of two soldiers delivering crucial intelligence during World War I...",
+          "vote_average": 4.6
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "Your preference for World War II historical films led us to recommend 1917. This technical masterpiece shot in one continuous take matches Dunkirk in historical authenticity, with a more immersive experience."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Sixth Sense", "The Others", "The Sixth Sense"],
+        "preferences": ["Horror", "Psychological", "Twist Ending"],
+        "movie_info": {
+          "title": "Get Out",
+          "director": "Jordan Peele",
+          "genres": ["Horror", "Mystery", "Thriller"],
+          "overview": "An African-American man visits his white girlfriend's family and discovers a terrifying secret...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "As an enthusiast of psychological horror films, Get Out perfectly combines social commentary with horror elements. The film's twist ending impact is as shocking as The Sixth Sense."
+    },
+    {
+      "input": {
+        "user_sequence": ["Before Sunrise", "Before Sunset", "Before Midnight"],
+        "preferences": ["Romance", "Dialogue-Driven", "Realism"],
+        "movie_info": {
+          "title": "Blue Valentine",
+          "director": "Derek Cianfrance",
+          "genres": ["Drama", "Romance"],
+          "overview": "The non-linear narrative of a couple's relationship from passion to breakdown...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Based on your deep understanding of realistic romance films, Blue Valentine's brutal portrayal of marital reality will touch you. Its emotional depth is as authentic and moving as the Before trilogy."
+    },
+    {
+      "input": {
+        "user_sequence": ["Dead Poets Society", "The Chorus", "Mr. Holland's Opus"],
+        "preferences": ["Education", "Inspirational", "Music"],
+        "movie_info": {
+          "title": "Freedom Writers",
+          "director": "Richard LaGravenese",
+          "genres": ["Drama", "Biography"],
+          "overview": "The true story of a teacher changing the lives of troubled students through journal writing...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Judging from your love for educational inspirational themes, Freedom Writers—a film showcasing the power of education—will be perfect for you. Its portrayal of teacher-student relationships is as inspiring as Dead Poets Society."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Truman Show", "Black Mirror", "Her"],
+        "preferences": ["Technological Ethics", "Dystopian", "Near Future"],
+        "movie_info": {
+          "title": "The Circle",
+          "director": "James Ponsoldt",
+          "genres": ["Drama", "Sci-Fi", "Thriller"],
+          "overview": "A young woman joins a tech giant and discovers the moral dilemma between privacy and transparency...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Your attention to technological ethics themes led us to recommend The Circle. Its exploration of privacy issues in the digital age is as sharp as Black Mirror, with stronger real-world warning significance."
+    },
+    {
+      "input": {
+        "user_sequence": ["Amélie", "Moonrise Kingdom", "The Grand Budapest Hotel"],
+        "preferences": ["Fantasy", "Comedy", "Visual Style"],
+        "movie_info": {
+          "title": "The Shape of Water",
+          "director": "Guillermo del Toro",
+          "genres": ["Drama", "Fantasy", "Romance"],
+          "overview": "The interspecies love story between a mute cleaner and a mysterious aquatic creature...",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "As an enthusiast of films with unique visual styles, The Shape of Water's fantasy aesthetics will appeal to you. Guillermo del Toro's fairy-tale texture is as highly recognizable as Wes Anderson's works."
+    },
+    {
+      "input": {
+        "user_sequence": ["Spotlight", "The Post", "All the President's Men"],
+        "preferences": ["Journalism", "Investigative", "True Story"],
+        "movie_info": {
+          "title": "The Night Manager",
+          "director": "Susanne Bier",
+          "genres": ["Drama", "History", "Crime"],
+          "overview": "A journalist exposes the abuse scandal in a British nursing home through an investigative story...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Based on your preference for investigative journalism themes, The Night Manager—based on a true event—will suit your taste. Its commitment to journalistic justice is as admirable as Spotlight."
+    },
+    {
+      "input": {
+        "user_sequence": ["Léon: The Professional", "Angel-A", "The Big Blue"],
+        "preferences": ["French Film", "Art House", "Luc Besson"],
+        "movie_info": {
+          "title": "Blue Is the Warmest Color",
+          "director": "Abdellatif Kechiche",
+          "genres": ["Drama", "Romance", "LGBTQ+"],
+          "overview": "The love and growth story of a teenage girl Adèle and a blue-haired girl Emma...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Judging from your appreciation for French art house films, Blue Is the Warmest Color's delicate portrayal of youth and love will be perfect for you. Its emotional authenticity is as touching as Léon: The Professional."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Bourne Series", "Taken", "The Equalizer"],
+        "preferences": ["Action", "Spy", "Revenge"],
+        "movie_info": {
+          "title": "John Wick",
+          "director": "Chad Stahelski",
+          "genres": ["Action", "Thriller", "Crime"],
+          "overview": "A retired hitman seeks revenge against a gang for killing his dog...",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "Your preference for hard-core action films led us to recommend John Wick. The film's sleek fight choreography and unique revenge motivation inject fresh blood into the spy genre you're familiar with."
+    },
+    {
+      "input": {
+        "user_sequence": ["Mulholland Drive", "Lost Highway", "Inland Empire"],
+        "preferences": ["Surreal", "Psychological", "David Lynch"],
+        "movie_info": {
+          "title": "Under the Skin",
+          "director": "Jonathan Glazer",
+          "genres": ["Sci-Fi", "Horror", "Drama"],
+          "overview": "A surreal story of an alien creature hunting humans in human female form on Earth...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4
+      },
+      "output": "As a deep enthusiast of surreal psychological films, Under the Skin's eerie aesthetics and identity exploration will resonate deeply with you. Its ambiguous narrative is as thought-provoking as David Lynch's works."
+    },
+    {
+      "input": {
+        "user_sequence": ["A Beautiful Mind", "The Imitation Game", "The Theory of Everything"],
+        "preferences": ["Biography", "Genius", "Science"],
+        "movie_info": {
+          "title": "Hidden Figures",
+          "director": "Theodore Melfi",
+          "genres": ["Drama", "History", "Biography"],
+          "overview": "The true story of African-American female mathematicians making key contributions to NASA's space program...",
+          "vote_average": 4.5
+        },
+        "predicted_rating": 4.7
+      },
+      "output": "Based on your interest in biopics about scientific geniuses, Hidden Figures—a film showcasing forgotten heroes—will be perfect for you. Beyond scientific achievements, it emphasizes the significance of equality, with depth exceeding typical biopics."
+    },
+    {
+      "input": {
+        "user_sequence": ["Pulp Fiction", "Reservoir Dogs", "Django Unchained"],
+        "preferences": ["Crime", "Black Comedy", "Quentin Tarantino"],
+        "movie_info": {
+          "title": "The Ballad of Buster Scruggs",
+          "director": "Coen Brothers",
+          "genres": ["Western", "Comedy", "Drama"],
+          "overview": "An absurd collection of six Western stories exploring fate and death...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Starting from your preference for black crime comedies, the Coen Brothers' The Ballad of Buster Scruggs will appeal to you. Its absurd humor and fate satire are reminiscent of Quentin Tarantino's works."
+    },
+    {
+      "input": {
+        "user_sequence": ["Shutter Island", "Memento", "The Butterfly Effect"],
+        "preferences": ["Psychological", "Memory", "Mystery"],
+        "movie_info": {
+          "title": "Ghajini",
+          "director": "A.R. Murugadoss",
+          "genres": ["Action", "Drama", "Mystery"],
+          "overview": "A man with short-term memory loss tries to track down his lover's killer...",
+          "vote_average": 4.3
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Your love for memory-themed mystery films led us to recommend Ghajini. It explores memory and identity within an action-mystery framework, with narrative complexity comparable to Memento."
+    },
+    {
+      "input": {
+        "user_sequence": ["Room", "The Florida Project", "Moonlight"],
+        "preferences": ["Independent Film", "Social Margins", "Human Nature"],
+        "movie_info": {
+          "title": "Never Rarely Sometimes Always",
+          "director": "Eliza Hittman",
+          "genres": ["Drama"],
+          "overview": "The difficult journey of a teenage girl traveling across state lines for an abortion...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.6
+      },
+      "output": "Based on your deep attention to social margin themes, Never Rarely Sometimes Always's delicate portrayal of women's situations will touch you. Its realistic style is as striking as Room."
+    },
+    {
+      "input": {
+        "user_sequence": ["The Hangover", "Bridesmaids", "Superbad"],
+        "preferences": ["Comedy", "R-Rated", "Ensemble Cast"],
+        "movie_info": {
+          "title": "Good Boys",
+          "director": "Gene Stupnitsky",
+          "genres": ["Comedy"],
+          "overview": "The absurd adventure of three sixth-grade boys learning to kiss for a kissing party...",
+          "vote_average": 4.0
+        },
+        "predicted_rating": 4.3
+      },
+      "output": "Judging from your preference for R-Rated comedies, Good Boys—an innovative film with children acting in adult comedy—will be perfect for you. Its humor is both innocent and mature, bringing freshness to the comedy genre you're familiar with."
+    },
+    {
+      "input": {
+        "user_sequence": ["Zootopia", "Despicable Me", "Kung Fu Panda"],
+        "preferences": ["Animation", "Comedy", "Family"],
+        "movie_info": {
+          "title": "The Mitchells vs. The Machines",
+          "director": "Mike Rianda",
+          "genres": ["Animation", "Comedy", "Adventure"],
+          "overview": "The hilarious adventure of a quirky family saving the world during a robot uprising...",
+          "vote_average": 4.2
+        },
+        "predicted_rating": 4.5
+      },
+      "output": "Your love for family animations led us to recommend The Mitchells vs. The Machines. While maintaining family-friendly entertainment, this film cleverly satirizes the digital age, with comedy creativity as excellent as Zootopia."
+    },
+    {
+      "input": {
+      "user_sequence": ["Arrival", "Her", "Blade Runner 2049"],
+      "preferences": ["Emotional Sci-Fi", "Exploration of Human Nature", "Technological Ethics"],
+      "pref_weight_info": "Distinct preference for emotionally profound sci-fi",
+      "movie_info": {
+        "title": "Swan Song",
+        "director": "Benjamin Cleary",
+        "genres": ["Sci-Fi", "Drama"],
+        "overview": "A man with a terminal illness clones himself to continue accompanying his family, confronting dilemmas of identity and love...",
+        "vote_average": 4.3
+      },
+        "predicted_rating": 4.6,
+        "explanation_type": 1
+      },
+      "output": "Based on your unique taste for emotionally profound sci-fi, Swan Song—which delves into cloning ethics and the essence of love—will be an excellent fit for you. The film’s emotional complexity carries forward the depth of reflection you value."
+    },
+    {
+      "input": {
+        "user_sequence": ["Whiplash", "Black Swan", "Birdman"],
+        "preferences": ["Artistic Pursuit", "Psychological Pressure", "Perfectionism"],
+        "pref_weight_info": "Prominent preference for themes of art and psychology",
+        "movie_info": {
+          "title": "Tár",
+          "director": "Todd Field",
+          "genres": ["Drama", "Music"],
+          "overview": "The story of legendary conductor Lydia Tár’s artistic career and the corruption of power...",
+          "vote_average": 4.4
+        },
+        "predicted_rating": 4.7,
+        "explanation_type": 1
+      },
+      "output": "Your preference for works centered on artistic obsession leads us to recommend Tár. Its exploration of the relationship between genius and power, with its psychological depth, is just as captivating as Black Swan."},
+    {
+      "input": {
+        "user_sequence": ["Joker", "It", "The Dark Knight"],
+        "preferences": ["Villain Depth", "Psychological Analysis", "Social Critique"],
+        "pref_weight_info": "Strong preference for complex villains",
+        "movie_info": {
+          "title": "X",
+          "director": "Ti West",
+          "genres": ["Horror", "Thriller"],
+          "overview": "A psychological horror story about a 1970s pornographic film crew who encounter terrifying elderly people on a farm...",
+          "vote_average": 4.1
+        },
+        "predicted_rating": 4.4,
+        "explanation_type": 1
+      },
+      "output": "Drawing from your interest in the psychology of complex villains, X—a horror film that explores desire and fear—will captivate you. The film’s psychological layers and social commentary are well worth in-depth consideration."}
+  ]
+}
